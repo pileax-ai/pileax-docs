@@ -1,0 +1,32 @@
+{
+  "name": "pileax-docs",
+  "version": "0.4.0",
+  "description": "Documentation for PileaX",
+  "keywords": [
+    "vitepress",
+    "i18n",
+    "yiitap"
+  ],
+  "author": {
+    "name": "PileaX",
+    "email": "pileaxai@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "https://docs.pileax.ai",
+  "repository": "pileax-ai/pileax-docs",
+  "bugs": {
+    "url": "https://github.com/pileax-ai/pileax-docs/issues"
+  },
+  "dependencies": {
+    "vue": "^3.5.29"
+  },
+  "devDependencies": {
+    "vitepress": "^2.0.0-alpha.16",
+    "vitepress-plugin-tabs": "^0.6.0"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  }
+}
