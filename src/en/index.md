@@ -4,7 +4,8 @@ layout: home
 
 hero:
   name: "PileaX"
-  tagline: One-stop AI Knowledge Bases
+  text: All-in-one AI Knowledge Base
+  tagline: Local-first · Knowledge loop · Growing wisdom
   image:
     src: /logo-with-shadow.png
     alt: PileaX
@@ -24,7 +25,7 @@ features:
     title: Notes
     details: Capture ideas and build structured knowledge with AI support.
   - icon: 🤖
-    title: Reading
+    title: Personal Library
     details: Build your personal library and enjoy AI-powered reading.
 ---
 

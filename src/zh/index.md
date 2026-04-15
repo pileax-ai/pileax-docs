@@ -4,7 +4,8 @@ layout: home
 
 hero:
   name: "PileaX"
-  tagline: 一站式 AI 知识库
+  text: 一站式 AI 知识库
+  tagline: 本地优先，知识循环，智慧生长
   image:
     src: /logo-with-shadow.png
     alt: PileaX
@@ -21,9 +22,9 @@ features:
     title: AI 助手
     details: 您的AI助手，随时解答疑惑并完成各种任务
   - icon: ✨
-    title: 笔记
+    title: 智能笔记
     details: 沉淀奇思妙想，让碎片的灵感在 AI 辅助下构筑成体系
   - icon: 🤖
-    title: 阅读
+    title: 个人图书馆
     details: 打造个人图书馆，畅享 AI 智慧阅读
 ---
