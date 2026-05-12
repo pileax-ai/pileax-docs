@@ -28,7 +28,7 @@ export default defineConfig({
     ],
     footer: {
       message: 'MIT Licensed.',
-      copyright: `Copyright © 2024-present ${name}`
+      copyright: `Copyright © 2025-present ${name}`
     },
   },
 

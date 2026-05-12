@@ -5,7 +5,7 @@ import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 // import { VPPluginTabs, VPPluginTab } from 'vitepress-plugin-tabs'
 // import "vitepress-plugin-tabs/style.css";
 import { watchEffect } from 'vue'
-import { VersionBadge } from './components'
+import { Download, VersionBadge } from './components'
 import './style/main.css'
 import './style/vars.css'
 
@@ -14,6 +14,7 @@ const theme = {
   enhanceApp({ app, router }: EnhanceAppContext) {
     // components
     app.component('VersionBadge', VersionBadge)
+    app.component('Download', Download)
     // app.component('VPPluginTabs', VPPluginTabs)
     // app.component('VPPluginTab', VPPluginTab)
 

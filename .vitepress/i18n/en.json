@@ -1,7 +1,8 @@
 {
+  "download": "Download",
+  "guide": "Guide",
   "nav.components": "Components",
   "nav.demo": "Demo",
-  "nav.guide": "Guide",
   "nav.preview": "Preview",
   "sidebar.advanced": "Advanced",
   "sidebar.components": "Components",
