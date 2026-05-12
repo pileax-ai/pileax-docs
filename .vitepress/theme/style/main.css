@@ -101,3 +101,12 @@ div[data-type="column-container"] {
         }
     }
 }
+
+h2:has(svg) {
+    display: flex;
+    align-items: center;
+
+    svg {
+        margin-right: 12px;
+    }
+}

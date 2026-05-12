@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons-ng'
+import { resolve } from 'node:path'
 import { keywords, name, repo } from '../meta'
 
 // https://vitepress.dev/reference/site-config
@@ -43,6 +45,14 @@ export default defineConfig({
     }
   },
 
-  optimizeDeps: {
-  }
+  vite: {
+    plugins: [
+      createSvgIconsPlugin({
+        iconDirs: [
+          resolve(process.cwd(), 'src/public/icons')
+        ],
+      }),
+    ],
+  },
+
 })

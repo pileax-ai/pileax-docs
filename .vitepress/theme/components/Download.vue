@@ -1,7 +1,14 @@
 <template>
   <div class="download-page">
     <div class="banner VPHero">
-      <h1 class="name clip">{{ t('download') }} <span>PileaX</span></h1>
+      <h1 class="name clip">
+        <span>{{ t('download') }}</span>
+        <gradient-text text="PileaX"
+                       :colors="['#ffffff', '#3f51b5', '#8247E5', '#00bcd4', '#ffffff']"
+                       :animation-speed="8"
+                       show-border
+                       class-name="your-custom-class" />
+      </h1>
       <div class="desc">Free for macOS, Windows and Linux</div>
       <div class="version">{{ config?.version }}</div>
     </div>
@@ -11,16 +18,18 @@
         <div class="items">
           <div class="item">
             <article class="VPFeature">
-              <div class="icon">🚀</div>
+              <div class="icon">
+                <svg-icon name="icon-apple" size="32px" />
+              </div>
               <div class="meta">
                 <div class="title">macOS</div>
-                <div class="caption">Intel & Apple Silicon</div>
+                <div class="caption">Apple Silicon & Intel</div>
               </div>
               <div class="actions">
                 <div class="action" v-for="(item, index) in macosFiles" :key="`macos-${index}`">
                   <a class="VPButton medium brand"
                      :class="{ 'outline': item.url.indexOf('x64') > 0 }"
-                     :href="`${yamlBaseUrl}/${item.url}`">
+                     :href="`${fileBaseUrl}/${item.url}`">
                     {{ item.url.indexOf('x64') > 0 ? 'Intel' : 'Apple Silicon' }}
                   </a>
                 </div>
@@ -29,7 +38,9 @@
           </div>
           <div class="item">
             <article class="VPFeature">
-              <div class="icon">🚀</div>
+              <div class="icon">
+                <svg-icon name="icon-microsoft-windows" size="32px" />
+              </div>
               <div class="meta">
                 <div class="title">Windows</div>
                 <div class="caption">Windows 10+</div>
@@ -38,7 +49,7 @@
                 <div class="action" v-for="(item, index) in windowsFiles" :key="`windows-${index}`">
                   <a class="VPButton medium brand"
                      :class="{ 'outline': item.url.indexOf('x86') > 0 }"
-                     :href="`${yamlBaseUrl}/${item.url}`">
+                     :href="`${fileBaseUrl}/${item.url}`">
                     Installer {{ item.url.indexOf('x86') > 0 ? 'x86' : 'x86_64' }}
                   </a>
                 </div>
@@ -47,16 +58,18 @@
           </div>
           <div class="item">
             <article class="VPFeature">
-              <div class="icon">🚀</div>
+              <div class="icon">
+                <svg-icon name="linux" size="32px" />
+              </div>
               <div class="meta">
                 <div class="title">Linux</div>
                 <div class="caption">Main Distributions</div>
               </div>
               <div class="actions">
-                <div class="action" v-for="(item, index) in windowsFiles" :key="`windows-${index}`">
+                <div class="action" v-for="(item, index) in linuxFiles" :key="`windows-${index}`">
                   <a class="VPButton medium brand"
                      :class="{ 'outline': item.url.indexOf('x86') > 0 }"
-                     :href="`${yamlBaseUrl}/${item.url}`">
+                     :href="`${fileBaseUrl}/${item.url}`">
                     AppImage {{ item.url.indexOf('x86') > 0 ? 'x86' : 'x86_64' }}
                   </a>
                 </div>
@@ -73,6 +86,8 @@
 import { computed, ref, onMounted } from 'vue'
 import yaml from 'js-yaml'
 import { tr } from '../../i18n'
+import GradientText from './GradientText.vue'
+import SvgIcon from './SvgIcon.vue'
 
 
 interface UpdateConfigFile {
@@ -90,7 +105,7 @@ interface UpdateConfig {
   [key: string]: any
 }
 
-const yamlBaseUrl = 'https://file.pileax.ai/updater/desktop'
+const fileBaseUrl = 'https://file.pileax.ai/updater/desktop'
 const props = defineProps({
   locale: {
     type: String,
@@ -137,14 +152,16 @@ onMounted(() => {
 })
 </script>
 
-<style>
+<style lang="scss">
 .download-page {
   .banner {
     margin-top: 40px;
     text-align: center;
 
     .name {
-      font-size: 40px;
+      display: inline-flex;
+      font-size: 52px;
+      gap: 20px;
     }
 
     .desc {
@@ -160,7 +177,6 @@ onMounted(() => {
 
   .VPFeatures {
     padding: 40px 24px;
-
 
     .VPFeature {
       display: block;
@@ -188,6 +204,10 @@ onMounted(() => {
         font-size: 24px;
         transition: background-color 0.25s;
         margin: 0 auto;
+
+        svg {
+          color: var(--vp-c-brand-1);
+        }
       }
 
       .meta {
@@ -227,7 +247,7 @@ onMounted(() => {
       margin: -8px;
     }
     .item {
-      padding: 8px;
+      padding: 10px;
       width: 100%;
     }
   }
@@ -252,6 +272,10 @@ onMounted(() => {
     text-decoration: none;
     width: 100%;
     max-width: 200px;
+
+    &:hover {
+      filter: brightness(1.2);
+    }
 
     &.brand  {
       border-color: var(--vp-button-brand-border);
