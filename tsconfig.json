@@ -16,7 +16,8 @@
     "forceConsistentCasingInFileNames": true,
     "types": [
       "vite/client",
-      "vitepress"
+      "vitepress",
+      "node"
     ]
   },
   "include": [

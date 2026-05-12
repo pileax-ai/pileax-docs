@@ -1,7 +1,7 @@
 <template>
   <div class="download-page">
     <div class="banner VPHero">
-      <h1 class="name clip">
+      <h1 class="name clip" data-aos="fade-up">
         <span>{{ t('download') }}</span>
         <gradient-text text="PileaX"
                        :colors="['#ffffff', '#3f51b5', '#8247E5', '#00bcd4', '#ffffff']"
@@ -9,11 +9,11 @@
                        show-border
                        class-name="your-custom-class" />
       </h1>
-      <div class="desc">Free for macOS, Windows and Linux</div>
-      <div class="version">{{ config?.version }}</div>
+      <div class="desc" data-aos="fade-up" data-aos-delay="100">Free for macOS, Windows and Linux</div>
+      <div class="version" data-aos="fade-up" data-aos-delay="100">{{ config?.version }}</div>
     </div>
 
-    <div class="VPFeatures">
+    <div class="VPFeatures" data-aos="fade-up" data-aos-delay="300">
       <div class="container">
         <div class="items">
           <div class="item">
@@ -190,7 +190,7 @@ onMounted(() => {
 
       &:hover {
         border-color: var(--vp-c-brand-1);
-        background-color: var(--vp-c-bg-soft-up);
+        //background-color: var(--vp-c-bg-soft-up);
       }
 
       .icon {
@@ -206,7 +206,7 @@ onMounted(() => {
         margin: 0 auto;
 
         svg {
-          color: var(--vp-c-brand-1);
+          //color: var(--vp-c-brand-1);
         }
       }
 

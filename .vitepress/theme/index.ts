@@ -6,6 +6,8 @@ import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 // import "vitepress-plugin-tabs/style.css";
 import { watchEffect } from 'vue'
 import { Download, GradientText, SvgIcon, VersionBadge } from './components'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import './style/main.css'
 import './style/vars.css'
 
@@ -25,6 +27,15 @@ const theme = {
 
     // tabs
     enhanceAppWithTabs(app)
+
+    // aos
+    if (!(import.meta as any).env.SSR) {
+      AOS.init({
+        duration: 800,
+        easing: 'ease-out-quad',
+        once: true
+      })
+    }
   },
   setup() {
     const { lang } = useData()
