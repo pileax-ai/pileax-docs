@@ -5,7 +5,7 @@ import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 // import { VPPluginTabs, VPPluginTab } from 'vitepress-plugin-tabs'
 // import "vitepress-plugin-tabs/style.css";
 import { watchEffect } from 'vue'
-import { Download, GradientText, SvgIcon, VersionBadge } from './components'
+import { Download, Home, GradientText, SvgIcon, VersionBadge } from './components'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import './style/main.css'
@@ -16,6 +16,7 @@ const theme = {
   enhanceApp({ app, router }: EnhanceAppContext) {
     // components
     app.component('Download', Download)
+    app.component('Home', Home)
     app.component('GradientText', GradientText)
     app.component('SvgIcon', SvgIcon)
     app.component('VersionBadge', VersionBadge)

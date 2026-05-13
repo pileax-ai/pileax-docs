@@ -1,6 +1,20 @@
 body {
     font-size: 16px !important;
     font-family: var(--vp-font-family-base) !important;
+    line-height: unset!important;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+.text-accent {
+    color: #47caff;
+}
+.text-center {
+    text-align: center;
+}
+.text-uppercase {
+    text-transform: uppercase;
 }
 
 .image-bg {

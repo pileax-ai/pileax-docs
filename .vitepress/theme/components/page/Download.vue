@@ -85,9 +85,9 @@
 <script setup lang="ts">
 import { computed, ref, onMounted } from 'vue'
 import yaml from 'js-yaml'
-import { tr } from '../../i18n'
-import GradientText from './GradientText.vue'
-import SvgIcon from './SvgIcon.vue'
+import { tr } from '../../../i18n'
+import GradientText from '../GradientText.vue'
+import SvgIcon from '../SvgIcon.vue'
 
 
 interface UpdateConfigFile {
