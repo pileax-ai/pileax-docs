@@ -31,7 +31,7 @@ const theme = {
     // aos
     if (!(import.meta as any).env.SSR) {
       AOS.init({
-        duration: 800,
+        duration: 500,
         easing: 'ease-out-quad',
         once: true
       })

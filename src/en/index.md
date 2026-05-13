@@ -29,3 +29,18 @@ features:
     details: Build your personal library and enjoy AI-powered reading.
 ---
 
+<div data-aos="fade-up" data-aos-delay="500">
+
+# Preview
+
+## Light Mode
+![Quickstart](/screenshots/quickstart.png)
+
+</div>
+
+<div data-aos="fade-up" data-aos-delay="200">
+
+## Dark Mode
+![Quickstart](/screenshots/quickstart-dark.png)
+
+</div>
