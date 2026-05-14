@@ -9,7 +9,13 @@
                        show-border
                        class-name="your-custom-class" />
       </h1>
-      <div class="desc" data-aos="fade-up" data-aos-delay="100">Free for macOS, Windows and Linux</div>
+      <div class="desc" data-aos="fade-up" data-aos-delay="100">
+        <div class="platforms">
+          <span class="text-accent">
+            {{ t('free') }}
+          </span>  macOS · Windows · Linux
+        </div>
+      </div>
       <div class="version" data-aos="fade-up" data-aos-delay="100">{{ config?.version }}</div>
     </div>
 
@@ -50,7 +56,7 @@
                   <a class="VPButton medium brand"
                      :class="{ 'outline': item.url.indexOf('x86') > 0 }"
                      :href="`${fileBaseUrl}/${item.url}`">
-                    Installer {{ item.url.indexOf('x86') > 0 ? 'x86' : 'x86_64' }}
+                    {{ t('installer') }} {{ item.url.indexOf('x86') > 0 ? 'x86' : 'x86_64' }}
                   </a>
                 </div>
               </div>
@@ -63,7 +69,7 @@
               </div>
               <div class="meta">
                 <div class="title">Linux</div>
-                <div class="caption">Main Distributions</div>
+                <div class="caption">Ubuntu, Debian, etc.</div>
               </div>
               <div class="actions">
                 <div class="action" v-for="(item, index) in linuxFiles" :key="`windows-${index}`">
@@ -165,8 +171,21 @@ onMounted(() => {
     }
 
     .desc {
+      display: flex;
+      justify-content: center;
       margin-top: 20px;
       color: var(--vp-c-text-1);
+
+      .platforms {
+        padding: 6px 12px;
+        color: var(--vp-c-text-3);
+        border: solid 1px var(--vp-c-bg-soft);
+        border-radius: 24px;
+
+        span {
+          margin-right: 8px;
+        }
+      }
     }
 
     .version {
@@ -222,8 +241,8 @@ onMounted(() => {
       }
 
       .caption {
+        margin-top: 4px;
         font-size: 12px;
-        font-weight: 600;
         color: var(--vp-c-text-3);
       }
 

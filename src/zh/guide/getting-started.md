@@ -1,101 +1,36 @@
 # 快速开始
 
-<p class="badges">
-    <a href="https://www.npmjs.com/package/@yiitap/vue" target="_blank">
-        <img src="https://img.shields.io/npm/v/@yiitap/vue.svg?label=npm" alt="Version" />
-    </a>
-    <a href="https://github.com/pileax-ai/yiitap" target="_blank">
-        <img src="https://img.shields.io/github/stars/pileax-ai/yiitap?style=social" alt="GitHub Repo stars" />
-    </a>
-</p>
+## 什么是 PileaX
 
-## 安装
+PileaX 是一款本地优先的一站式 AI 知识库，集 AI 对话、智能笔记、电子书阅读和管理于一体。从知识的生产到应用，PileaX 帮助您建立统一的知识库，利用 AI 智能体技术不断优化 AI 交互体验。数据完全由您掌控，支持离线使用的桌面应用和灵活部署的 Web 应用。
 
-:::tabs
-== Vue
-```shell
-# npm
-npm -i @yiitap/vue
+## 如何使用
 
-# yarn
-yarn add @yiitap/vue
+PileaX 提供了桌面应用、Docker镜像和源码，根据根据需求选择不同的使用方式。
 
-# pnpm
-pnpm add @yiitap/vue
-```
-== React
-`提示` React版本的Yiitap还在构建中，请保持关注。
-```shell
-# npm
-npm -i @yiitap/react
+<features
+    :items="[
+        { label: 'macOS', icon: 'apple', link: '/zh/guide/installation/desktop-macos' },
+        { label: 'Windows', icon: 'microsoft-windows', link: '/zh/guide/installation/desktop-windows' },
+        { label: 'Linux', icon: 'linux', link: '/zh/guide/installation/desktop-linux' },
+    ]"
+    data-aos="fade-up"
+    data-aos-delay="0" dense>
+</features>
 
-# yarn
-yarn add @yiitap/react
+### 桌面应用
+PileaX 提供了 macOS、Windows 和 Linux 的安装包，前往 [下载](/zh/download) 页面下载最新的桌面应用，一健安装即可开始体验。
 
-# pnpm
-pnpm add @yiitap/react
-```
-:::
+### Docker
 
-## 使用
+PileaX 的 Docker 镜像已经发布至 [Docker Hub](https://hub.docker.com/u/pileax)，包括：
 
-安装后，在你的App中使用 YiiEditor。
+- pileax/pileax-api：后端API服务
+- pileax/pileax-web：Web前端 
+- pileax/pileax-collab: 协作服务
 
-:::tabs
-== Vue
-```vue
-<template>
-  <YiiEditor ref="yiiEditor" v-bind="options" @update="onUpdate" />
-</template>
+详细的部署说明请参考： [Docker](/zh/guide/installation/docker)
 
-<script setup lang="ts">
-import { computed, ref } from 'vue';
-import { YiiEditor } from '@yiitap/vue';
-import '@yiitap/vue/dist/vue.css';
+### 自定义部署
 
-const yiiEditor = ref<InstanceType<typeof YiiEditor>>();
-
-const options = computed(() => {
-  return {
-    content: '',
-    showMainMenu: false,
-    showBubbleMenu: true,
-    sideMenu: {
-      show: true,
-      add: 'menu',
-    },
-    pageView: 'page',
-  }
-})
-
-function onUpdate({ json, html }: { json: any; html: string }) {
-  console.log('update', json)
-  console.log('update', html);
-}
-</script>
-```
-完整的示例请参考: [Demo](https://github.com/pileax-ai/yiitap/blob/main/apps/vue/src/components/Demo.vue)
-== React
-```jsx typescript
-import { useState } from 'react'
-import { YiiEditor } from '@yiitap/react'
-import '@yiitap/react/dist/vue.css'
-
-function App() {
-  return (
-    <>
-      <YiiEditor />
-    </>
-  )
-}
-
-export default App
-```
-完整的示例请参考: [Demo](https://github.com/pileax-ai/yiitap/blob/main/apps/react/src/App.jsx)
-:::
-
-## 更多
-
-若想了解更多信息，可查看相关文档:
-- [YiiEditor API](/zh/api/component/vue/yii-editor)
-- [Editor instance](https://tiptap.dev/docs/editor/api/editor)
+从源码开始自定义部署。

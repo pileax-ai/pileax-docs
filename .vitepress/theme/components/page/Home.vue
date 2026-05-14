@@ -1,159 +1,142 @@
 <template>
   <div class="home-page">
-    <div class="banner VPHero">
+    <!-- Banner -->
+    <section class="banner VPHero">
       <div class="name" data-aos="fade-up">
         PileaX
       </div>
       <h1 class="slogan" data-aos="fade-up" data-aos-delay="100">
-        <gradient-text text="All-in-one AI Knowledge Base"
+        <gradient-text :text="t('app.slogan')"
                        :colors="['#ffffff', '#3f51b5', '#8247E5', '#00bcd4', '#ffffff']"
                        :animation-speed="8"
                        show-border />
       </h1>
       <div class="tagline" data-aos="fade-up" data-aos-delay="100">
-        Local-first · Knowledge loop · Growing wisdom
+        {{ t('app.tags.tag1') }} · {{ t('app.tags.tag2') }} · {{ t('app.tags.tag3') }}
       </div>
-    </div>
+    </section>
 
-    <div class="screenshot" data-aos="fade-up" data-aos-delay="200">
-      <img src="/screenshots/quickstart.png" alt="Quickstart" />
-    </div>
+    <!-- Main Screenshot -->
+    <section class="screenshot" data-aos="fade-up" data-aos-delay="200">
+      <img :src="`/screenshots/quickstart${isDark ? '-dark' : ''}.png`" alt="Quickstart" />
+    </section>
 
-    <div class="download panel" data-aos="fade-up" data-aos-delay="300">
+    <!-- Download -->
+    <section class="download"
+             data-aos="fade-up"
+             data-aos-delay="100">
       <div class="action">
-        <a class="VPButton medium brand"
-           href="/download">
-          <svg-icon name="download" size="24px" />
-          Download
-        </a>
+        <pi-button class="brand"
+                   icon="download"
+                   icon-size="24px"
+                   href="/download">
+          {{ t('download') }}
+        </pi-button>
       </div>
       <div class="action">
-        <a class="VPButton medium brand outline"
-           href="https://github.com/pileax-ai/pileax"
-           target="_blank">
-          <svg-icon name="github" size="24px" />
-          Github
-        </a>
+        <pi-button class="brand outline"
+                   icon="github"
+                   icon-size="24px"
+                   label="Github"
+                   href="https://github.com/pileax-ai/pileax"
+                   target="_blank">
+        </pi-button>
       </div>
 
       <div class="download-tips">
         <div class="platforms">
-          <span class="text-accent">Free</span> · macOS · Windows · Linux
+          <span class="text-accent">
+            {{ t('free') }}
+          </span>  macOS · Windows · Linux
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="VPFeatures panel" data-aos="fade-up"
-         data-aos-offset="300"
-         data-aos-delay="500">
-      <header>
-        <div>
-          <span class="text-accent text-bold text-uppercase">Features</span>
-        </div>
-        <h1 class="text-center">
-          From knowledge creation to application.
-        </h1>
-        <div class="text-center caption">
-          Build a unified knowledge base and continuously optimizes the AI interaction experience with AI agent.
-        </div>
-      </header>
+    <!-- Features -->
+    <feature-card :tag="t('features')"
+                  :title="t('app.feature.brief')"
+                  :desc="t('app.feature.desc')"
+                  header-aos="fade-up"
+                  header-aos-delay="100">
+      <features :items="mainFeatures"
+                data-aos="fade-up"
+                data-aos-delay="100" />
 
-      <div class="container">
-        <div class="items"
-             data-aos="fade-up"
-             data-aos-delay="600">
-          <div class="item">
-            <article class="VPFeature">
-              <div class="icon">
-                <svg-icon name="icon-apple" size="32px" />
-              </div>
-              <div class="meta">
-                <div class="title">AI Chat</div>
-                <div class="caption">Your AI assistant, ready to answer questions and tackle tasks.</div>
-              </div>
-            </article>
-          </div>
-          <div class="item">
-            <article class="VPFeature">
-              <div class="icon">
-                <svg-icon name="icon-microsoft-windows" size="32px" />
-              </div>
-              <div class="meta">
-                <div class="title">Notes</div>
-                <div class="caption">Capture ideas and build structured knowledge with AI support.</div>
-              </div>
-            </article>
-          </div>
-          <div class="item">
-            <article class="VPFeature">
-              <div class="icon">
-                <svg-icon name="linux" size="32px" />
-              </div>
-              <div class="meta">
-                <div class="title">Personal Library</div>
-                <div class="caption">Build your personal library and enjoy AI-powered reading.</div>
-              </div>
-            </article>
-          </div>
-        </div>
+      <features :items="subFeatures" dense
+                item-aos="zoom-in-up"
+                item-aos-delay="100" />
+    </feature-card>
 
-        <div class="items feature-cloud">
-          <div class="item"
-               data-aos="flip-left" v-for="(item, index) in features" :key="index">
-            <article class="VPFeature dense">
-              <div class="icon">
-                <svg-icon :name="item.icon" size="24px" />
-              </div>
-              {{ item.label }}
-            </article>
-          </div>
-        </div>
+    <!-- More Screenshots -->
+    <feature-card :tag="t('screenshots')"
+                  tag-class="text-center"
+                  data-aos="fade-up" >
+      <div>
+        <img :src="`/screenshots/main${isDark ? '-dark' : ''}.gif`"
+             class="shadow"
+             alt="Screenshots" />
       </div>
-    </div>
+    </feature-card>
+
+
+    <!-- Reading -->
+    <feature-card :tag="t('reading')"
+                  tag-class="text-center"
+                  data-aos="fade-up" >
+      <div>
+        <img :src="`/screenshots/reader${isDark ? '-dark' : ''}.gif`"
+             class="shadow"
+             alt="Reading" />
+      </div>
+    </feature-card>
+
   </div>
 </template>
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { tr } from '../../../i18n'
-import GradientText from '../GradientText.vue'
+import { useData } from 'vitepress'
+
+import useCommon from '../../../hooks/useCommon'
+
+import { PiButton, Features, FeatureCard, GradientText } from '../index'
 import SvgIcon from '../SvgIcon.vue'
 
-const props = defineProps({
-  locale: {
-    type: String,
-    default: 'en'
-  }
-})
+const { isDark } = useData()
+const { t } = useCommon()
 
-const features = computed(() => {
+const mainFeatures = computed(() => {
   return [
-    { label: 'Multi-workspace', value: '', icon: 'apple' },
-    { label: 'Extensible', value: '', icon: 'apple' },
-    { label: 'Cross Platform', value: '', icon: 'apple' },
-    { label: 'AI Providers', value: '', icon: 'apple' },
-    { label: 'Chat/Embedding/TTS', value: '', icon: 'apple' },
-    { label: 'AI Agents', value: '', icon: 'apple' },
-    { label: 'Collaboration', value: '', icon: 'apple' },
-    { label: 'Notion-like Editor', value: '', icon: 'apple' },
-    { label: 'Markdown', value: '', icon: 'apple' },
+    { label: t('app.feature.chat'), value: 'chat', icon: 'chat', caption: t('app.feature.chat.desc') },
+    { label: t('app.feature.note'), value: 'note', icon: 'notes', caption: t('app.feature.note.desc') },
+    { label: t('app.feature.library'), value: 'library', icon: 'library', caption: t('app.feature.library.desc') },
   ]
 })
 
-const t = (key: string) => {
-  return tr(props.locale, key)
-}
+const subFeatures = computed(() => {
+  return [
+    { label: t('app.feature.multiWorkspace'), value: 'multiWorkspace', icon: 'workspaces' },
+    { label: t('app.feature.extensible'), value: 'extensible', icon: 'extension' },
+    { label: t('app.feature.crossPlatform'), value: 'crossPlatform', icon: 'devices' },
+    { label: t('app.feature.aiProviders'), value: 'aiProviders', icon: 'hub' },
+    { label: t('app.feature.aiModels'), value: 'aiModels', icon: 'neurology' },
+    { label: t('app.feature.aiAgents'), value: 'aiAgents', icon: 'smart_toy' },
+    { label: t('app.feature.collaboration'), value: 'collaboration', icon: 'diversity' },
+    { label: t('app.feature.editor'), value: 'editor', icon: 'widgets' },
+    { label: t('app.feature.markdown'), value: 'markdown', icon: 'markdown' },
+  ]
+})
 </script>
 
 <style lang="scss">
 .home-page {
-  .panel {
+  .pi-feature-card {
     margin-top: 100px;
   }
 
-  h1 {
-    font-size: 40px;
-    font-weight: 600;
+  .shadow {
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   }
 
   .banner {
@@ -165,7 +148,7 @@ const t = (key: string) => {
     }
 
     .slogan {
-      font-size: 52px;
+      font-size: 60px;
       line-height: unset;
     }
 
@@ -182,110 +165,7 @@ const t = (key: string) => {
   }
 
   .screenshot {
-    margin-top: 40px;
-  }
-
-  .VPFeatures {
-    padding: 16px 0;
-
-    header {
-      h1 {
-        margin: 18px 0;
-      }
-      .caption {
-        font-size: 18px;
-        color: var(--vp-c-text-3);
-      }
-    }
-
-    .container {
-      margin: 0 auto;
-      padding-top: 40px;
-      max-width: 1152px;
-    }
-    .items {
-      display: flex;
-      flex-wrap: wrap;
-      margin: -8px;
-
-      &.feature-cloud {
-        margin-top: 24px;
-      }
-    }
-    .item {
-      padding: 10px;
-      width: 100%;
-    }
-
-    .VPFeature {
-      display: block;
-      border: 1px solid var(--vp-c-bg-soft);
-      border-radius: 12px;
-      height: 100%;
-      background-color: var(--vp-c-bg-soft);
-      transition: border-color 0.25s, background-color 0.25s;
-      padding: 24px;
-      //text-align: center;
-
-      &.dense {
-        width: 100%;
-        display: inline-flex;
-        align-items: center;
-
-        .icon {
-          width: 32px;
-          height: 32px;
-          margin-right: 16px;
-        }
-      }
-
-      &:hover {
-        border-color: var(--vp-c-text-3);
-      }
-
-      .icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 6px;
-        background-color: var(--vp-c-default-soft);
-        width: 48px;
-        height: 48px;
-        font-size: 24px;
-        transition: background-color 0.25s;
-
-        svg {
-          //color: var(--vp-c-brand-1);
-        }
-      }
-
-      .meta {
-        margin-top: 20px;
-      }
-
-      .title {
-        line-height: 24px;
-        font-size: 20px;
-        font-weight: 600;
-        color: var(--vp-c-text-1);
-      }
-
-      .caption {
-        margin-top: 12px;
-        font-size: 12px;
-        font-weight: 600;
-        color: var(--vp-c-text-2);
-      }
-
-      .details {
-        flex-grow: 1;
-        padding-top: 8px;
-        line-height: 24px;
-        font-size: 14px;
-        font-weight: 500;
-        color: var(--vp-c-text-2);
-      }
-    }
+    margin-top: 60px;
   }
 
 
@@ -295,50 +175,10 @@ const t = (key: string) => {
     justify-content: center;
     align-items: center;
     gap: 24px;
+    margin-top: 100px;
 
     .action {
       width: 200px;
-    }
-    .VPButton {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid transparent;
-      text-align: center;
-      font-weight: 600;
-      white-space: nowrap;
-      transition: color 0.25s, border-color 0.25s, background-color 0.25s;
-      border-radius: 10px;
-      padding: 8px 20px;
-      line-height: 38px;
-      font-size: 14px;
-      text-decoration: none;
-      width: 100%;
-      max-width: 200px;
-
-      &:hover {
-        filter: brightness(1.2);
-        transform: translateY(-1px);
-      }
-
-      &.brand  {
-        color: var(--vp-button-brand-text);
-        background-color: var(--vp-button-brand-bg);
-      }
-
-      &.outline {
-        background-color: transparent!important;
-        color: inherit !important;
-        border-color: var(--vp-c-text-3);
-
-        &:hover {
-          border-color: var(--vp-button-brand-bg);
-        }
-      }
-
-      svg {
-        margin-right: 8px;
-      }
     }
 
     .download-tips {
@@ -347,29 +187,18 @@ const t = (key: string) => {
       justify-content: center;
 
       .platforms {
-        padding: 4px 12px;
+        padding: 6px 12px;
         color: var(--vp-c-text-3);
         border: solid 1px var(--vp-c-bg-soft);
         border-radius: 24px;
+
+        span {
+          margin-right: 8px;
+        }
       }
     }
   }
 
-  @media (min-width: 640px) {
-    .VPFeatures {
-      padding: 24px 0;
-
-      .item { width: calc(100% / 2); }
-    }
-  }
-
-  @media (min-width: 960px) {
-    .VPFeatures {
-      padding: 40px 0;
-
-      .item { width: calc(100% / 3); }
-    }
-  }
 
 }
 </style>

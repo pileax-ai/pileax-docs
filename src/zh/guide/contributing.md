@@ -14,12 +14,12 @@
 您需要先安装以下工具：
 - Git
 - Node
-- pnpm
+- yarn
 - git-cz
 
 ```shell
-# 安装 pnpm
-sudo npm install -g pnpm
+# 安装 yarn
+sudo npm install -g yarn
 
 # 安装 git-cz
 sudo npm install -g git-cz
@@ -27,26 +27,9 @@ sudo npm install -g git-cz
 
 ### 复刻并克隆仓库到本地
 ```shell
-git clone git@github.com:yourname/yiitap.git
+git clone git@github.com:yourname/pileax.git
 ```
 
-### 安装依赖
-```shell
-cd yiitap
-pnpm install
-```
-
-### 运行开发环境
-首先构建所有包：
-```shell
-pnpm build
-```
-
-默认运行 Vue 应用：
-```shell
-pnpm dev
-```
-在您喜欢的浏览器中打开 http://localhost:5173/yiitap
 
 ## 🧑🏻‍💻 开发与提交
 ### 创建新特性分支
@@ -60,34 +43,26 @@ git checkout -b feat/new-feature
 ### 代码检查、测试和构建
 #### 代码检查
 ```shell
-pnpm lint
+yarn lint
 ```
 确保没有代码检查问题，若有问题可使用以下命令修复：
 ```shell
-pnpm lint-fix
-```
-
-#### 测试
-```shell
-pnpm test-ci
+yarn lint-fix
+yarn format
 ```
 
 #### 构建
 ```shell
-pnpm build
+yarn build
+yarn build:electron
 ```
 
 ### 预览
 ```shell
-cd apps/vue
-pnpm preview
+yarn preview
 ```
-您可以访问 http://localhost:4173/yiitap 检查您的更改是否符合预期。
+您可以访问 http://127.0.0.1:9601 检查您的更改是否符合预期。
 
-### 生成变更集
-```shell
-pnpm changeset
-```
 
 ### 提交代码
 现在可以安全地提交代码了。
@@ -107,10 +82,10 @@ git push origin feat/new-feature
 ```shell
 gh pr create --title "feat: new feature" --body-file .github/pull_request_template.md
 ```
-或者在 GitHub 上创建 [拉取请求](https://github.com/pileax-ai/yiitap/pulls)。
+或者在 GitHub 上创建 [拉取请求](https://github.com/pileax-ai/pileax/pulls)。
 
 ## 📃 文档
 文档和代码同样重要。请在代码进行任何更改时，同步更新相应的文档仓库。
 
-- [代码仓库](https://github.com/pileax-ai/yiitap)：在此修改代码。
-- [文档仓库](https://github.com/pileax-ai/yiitap-docs)：在此更新或添加文档，以反映在 Yiitap 仓库中所做的更改。 
+- [代码仓库](https://github.com/pileax-ai/pileax)：在此修改代码。
+- [文档仓库](https://github.com/pileax-ai/pileax-docs)：在此更新或添加文档，以反映在 Yiitap 仓库中所做的更改。 

@@ -116,7 +116,7 @@ div[data-type="column-container"] {
     }
 }
 
-h2:has(svg) {
+h1:has(svg), h2:has(svg) {
     display: flex;
     align-items: center;
 

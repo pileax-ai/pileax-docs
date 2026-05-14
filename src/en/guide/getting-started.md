@@ -1,101 +1,33 @@
 # Getting Started
 
-<p class="badges">
-    <a href="https://www.npmjs.com/package/@yiitap/vue" target="_blank">
-        <img src="https://img.shields.io/npm/v/@yiitap/vue.svg?label=npm" alt="Version" /></a>
-    <a href="https://github.com/pileax-ai/yiitap" target="_blank">
-        <img src="https://img.shields.io/github/stars/pileax-ai/yiitap?style=social" alt="GitHub Repo stars" />
-    </a>
-</p>
+## What is PileaX
 
-## Installation
+PileaX is a local-first, all-in-one AI knowledge base that integrates AI chat, smart notes, and e-book reading & management. From knowledge creation to application, PileaX helps you build a unified knowledge base and continuously optimizes the AI interaction experience with AI agent technologies.Your data is fully under your control. It supports offline desktop apps and flexibly deployable web apps.
 
-:::tabs
-== Vue
-```shell
-# npm
-npm -i @yiitap/vue
+## How to use
 
-# yarn
-yarn add @yiitap/vue
+PileaX provides desktop apps, Docker images and source code. You can choose the way to use it according to your needs.
 
-# pnpm
-pnpm add @yiitap/vue
-```
-== React
-`Warning` The implementation for React are still under construction. Please stay tuned.
+<features
+:items="[
+{ label: 'macOS', icon: 'apple', link: '/guide/installation/desktop-macos' },
+{ label: 'Windows', icon: 'microsoft-windows', link: '/guide/installation/desktop-windows' },
+{ label: 'Linux', icon: 'linux', link: '/guide/installation/desktop-linux' },
+]"
+data-aos="fade-up"
+data-aos-delay="0" dense>
+</features>
 
-```shell
-# npm
-npm -i @yiitap/react
+### Desktop App
+PileaX offers installation packages for macOS, Windows and Linux. Head to the [Download](/download) page to get the latest desktop app, install it with one click and start using it right away.
 
-# yarn
-yarn add @yiitap/react
+### Docker
+PileaX Docker images are available on [Docker Hub](https://hub.docker.com/u/pileax), including:
+- pileax/pileax-api: Backend API service
+- pileax/pileax-web: Web frontend
+- pileax/pileax-collab: Collaboration service
 
-# pnpm
-pnpm add @yiitap/react
-```
-:::
+For detailed deployment instructions, see: [Docker](/guide/installation/docker)
 
-## Usage
-
-After installing, import [YiiEditor]() in your app.
-
-:::tabs
-== Vue
-```vue
-<template>
-  <YiiEditor ref="yiiEditor" v-bind="options" @update="onUpdate" />
-</template>
-
-<script setup lang="ts">
-import { computed, ref } from 'vue';
-import { YiiEditor } from '@yiitap/vue';
-import '@yiitap/vue/dist/vue.css';
-
-const yiiEditor = ref<InstanceType<typeof YiiEditor>>();
-
-const options = computed(() => {
-  return {
-    content: '',
-    showMainMenu: false,
-    showBubbleMenu: true,
-    sideMenu: {
-      show: true,
-      add: 'menu',
-    },
-    pageView: 'page',
-  }
-})
-
-function onUpdate({ json, html }: { json: any; html: string }) {
-  console.log('update', json)
-  console.log('update', html);
-}
-</script>
-```
-For a complete example, please refer to: [Demo](https://github.com/pileax-ai/yiitap/blob/main/apps/vue/src/components/Demo.vue)
-== React
-```jsx typescript
-import { useState } from 'react'
-import { YiiEditor } from '@yiitap/react'
-import '@yiitap/react/dist/vue.css'
-
-function App() {
-  return (
-    <>
-      <YiiEditor />
-    </>
-  )
-}
-
-export default App
-```
-For a complete example, please refer to: [Demo](https://github.com/pileax-ai/yiitap/blob/main/apps/react/src/App.jsx)
-:::
-
-## More
-
-Check out the documentation for more information:
-- [YiiEditor API](/api/component/vue/yii-editor) 
-- [Editor instance](https://tiptap.dev/docs/editor/api/editor)
+### Custom Deployment
+Deploy and customize from source code.

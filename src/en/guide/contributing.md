@@ -14,12 +14,12 @@ Contributions are **welcome** and will be fully **credited**. Here is a little b
 You'll need following installed first:
 - Git
 - Node
-- pnpm
+- yarn
 - git-cz
 
 ```shell
-# pnpm
-sudo npm install -g pnpm
+# yarn
+sudo npm install -g yarn
 
 # git-cz
 sudo npm install -g git-cz
@@ -27,26 +27,8 @@ sudo npm install -g git-cz
 
 ### Fork and clone the repo to your local machine
 ```shell
-git clone git@github.com:yourname/yiitap.git
+git clone git@github.com:yourname/pileax.git
 ```
-
-### Install dependencies
-```shell
-cd yiitap
-pnpm install
-```
-
-### Run dev
-Build all package first:
-```shell
-pnpm build
-```
-
-Run vue app by default: 
-```shell
-pnpm dev
-```
-Open http://localhost:5173/yiitap in your favorite browser.
 
 ## 🧑🏻‍💻 Develop and Commit
 ### Create new feature branch
@@ -60,34 +42,26 @@ Make specific code changes for your new feature.
 ### lint, test and build
 #### lint
 ```shell
-pnpm lint
+yarn lint
 ```
 Make sure there are no lint issues, fix it using:
 ```shell
-pnpm lint-fix
-```
-
-#### test
-```shell
-pnpm test-ci
+yarn lint-fix
+yarn format
 ```
 
 #### build
 ```shell
-pnpm build
+yarn build
+yarn build:electron
 ```
 
 ### Preview
 ```shell
-cd apps/vue
 pnpm preview
 ```
-You may go to http://localhost:4173/yiitap to check if your changes work as expected.
+You may go to http://127.0.0.1:9601 to check if your changes work as expected.
 
-### Generate changeset
-```shell
-pnpm changeset
-```
 
 ### Commit
 Now, it is safe to commit.
@@ -107,10 +81,10 @@ We recommend create pr using template:
 ```shell
 gh pr create --title "feat: new feature" --body-file .github/pull_request_template.md
 ```
-Or create [pull request](https://github.com/pileax-ai/yiitap/pulls) at Github.
+Or create [pull request](https://github.com/pileax-ai/pileax/pulls) at Github.
 
 ## 📃 Documentation
 Documentation is as important as code. Please update the documentation repository corresponding to any alterations you make in the code.
 
-- [Code Repo](https://github.com/pileax-ai/yiitap): Modify the code here.
-- [Documentation Repo](https://github.com/pileax-ai/yiitap-docs): Update or add documentation here to reflect changes made in the Yiitap repository.
+- [Code Repo](https://github.com/pileax-ai/pileax): Modify the code here.
+- [Documentation Repo](https://github.com/pileax-ai/pileax-docs): Update or add documentation here to reflect changes made in the Yiitap repository.

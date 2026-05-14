@@ -1,13 +1,8 @@
-import Download from './page/Download.vue'
-import Home from './page/Home.vue'
-import GradientText from './GradientText.vue'
-import SvgIcon from './SvgIcon.vue'
-import VersionBadge from './VersionBadge.vue'
-
-export {
-  Download,
-  Home,
-  GradientText,
-  SvgIcon,
-  VersionBadge,
-}
+export { default as Download } from './page/Download.vue'
+export { default as Home } from './page/Home.vue'
+export { default as PiButton } from './Button.vue'
+export { default as Features } from './Features.vue'
+export { default as FeatureCard } from './FeatureCard.vue'
+export { default as GradientText } from './GradientText.vue'
+export { default as SvgIcon } from './SvgIcon.vue'
+export { default as VersionBadge } from './VersionBadge.vue'

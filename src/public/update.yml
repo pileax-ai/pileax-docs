@@ -1,39 +1,29 @@
-version: 0.5.2
+version: 0.5.3
 files:
-  - url: releases/0.5.2/PileaX-0.5.2-arm64.zip
-    sha512: w7UqLr1UrkxQ23WjJKYOJE+uAfycmw4eTHcnOcIIiL/FID4G8894qXk5006gocCWXPbur+r79BjiwL5mYYJ3jA==
-    size: 179761281
-  - url: releases/0.5.2/PileaX-0.5.2-arm64.dmg
-    sha512: Zs4k9f2UcoTVUCC01gnwNFGkqh9TXKR+XqpjciPHpNnbv+4siu5kEQmcQl8yE+2yRnJOp5VmWdUz3YoSKuHezQ==
-    size: 183621008
-  - url: releases/0.5.2/PileaX-0.5.2-x64.zip
-    sha512: cojg/fPdSdTIrJf6JAjxHypf/KCuvnJmeRW6rauBQLBd8lM85WZIW9N6Qnd6nDdkKMU2m8ELCAvtuIYSRFcGYg==
-    size: 188086681
-  - url: releases/0.5.2/PileaX-0.5.2-x64.dmg
-    sha512: N2Oh47IWirwrGbsxJmyLRV994FXgNH8EyHRPBnhL/YMvm8UsINpf6AzlQB6+1B7byBNZtiRUvNZ+RtDE2mKEww==
-    size: 192051483
-  - url: releases/0.5.2/PileaX-0.5.2-x64.exe
-    sha512: 6AtfsAZwlEV4vLHuFGEgyHcIR/wfRfYsvusbxpfIuHIKsFBx90ROX9z6ZlmZFFocLnINaYWyxYohNM58LwYzpg==
-    size: 163482071
-  - url: releases/0.5.2/PileaX-0.5.2.AppImage
-    sha512: UkhJWkO8UPR037em3JBCmYskmijUQMp6jTS92Mrovz+svRAmGqN5tHrJhidzwRPLLCfTvvTH9Y136dTvgJifrw==
-    size: 218736946
-    blockMapSize: 227654
-path: releases/0.5.2/PileaX-0.5.2-arm64.zip
-sha512: w7UqLr1UrkxQ23WjJKYOJE+uAfycmw4eTHcnOcIIiL/FID4G8894qXk5006gocCWXPbur+r79BjiwL5mYYJ3jA==
-releaseDate: '2026-05-11T15:20:18.459Z'
-releaseName: v0.5.2 📦
-releaseNotes: "# What's Changed\r\n\r\n## \U0001F680 Features\r\n\r\n- feat: System\
-  \ environment (#74) @pileax\r\n- feat: Book info (#72) @pileax\r\n- feat: Bookmark\
-  \ (#70) @pileax\r\n- feat: Book note (#68) @pileax\r\n- feat: Book entry (#67) @pileax\r\
-  \n- feat: LLM TTS - Tongyi, FishAudio (#63) @pileax\r\n\r\n## ⚡ Enhancements\r\n\
-  \r\n- enhancement: init settings (#71) @pileax\r\n- enhancement: book annotation\
-  \ (#69) @pileax\r\n- enhancement: foliate (#64) @pileax\r\n\r\n## \U0001F41B Bug\
-  \ Fixes\r\n\r\n- fix: Window buttons (#75) @pileax\r\n- feat: Book note (#68) @pileax\r\
-  \n\r\n## \U0001F916 Maintenance\r\n\r\n- chore(deps): bump release-drafter/release-drafter\
-  \ from 7.2.1 to 7.3.0 (#73) @[dependabot[bot]](https://github.com/apps/dependabot)\r\
-  \n- chore(deps): bump release-drafter/release-drafter from 7.2.0 to 7.2.1 (#66)\
-  \ @[dependabot[bot]](https://github.com/apps/dependabot)\r\n- chore(deps): bump\
-  \ dawidd6/action-download-artifact from 20 to 21 (#65) @[dependabot[bot]](https://github.com/apps/dependabot)\r\
-  \n\r\n**Full Changelog**: [v0.5.1...v0.5.2](https://github.com/pileax-ai/pileax/compare/v0.5.1...v0.5.2)\r\
+  - url: releases/0.5.3/PileaX-0.5.3-arm64.zip
+    sha512: rXIgpB5zmGeAXwohuOCSVOloeU3fxlso2w4YdtWhiW5sk3PQZBsI3FSWXbrdhF5IwaM7saUSJpGVttAzGjotmA==
+    size: 179765320
+  - url: releases/0.5.3/PileaX-0.5.3-arm64.dmg
+    sha512: yp2/9lxo5C1XxGqfs8W5Liz6FOOIp6iIyp07o+cESgNkad+od6GOlEE4ExBgExv7WHsLvZA3RDH4yQhpOqilcQ==
+    size: 183618721
+  - url: releases/0.5.3/PileaX-0.5.3-x64.zip
+    sha512: XZEv4AqbeZmo0kcDAGH0f6f3DXDy6a1XpEjT+aefbawePdZvQYnxIHXBW2YP80zPJeuIfBXGG7IpMcT0U0BSqQ==
+    size: 188089898
+  - url: releases/0.5.3/PileaX-0.5.3-x64.dmg
+    sha512: vfAvd/C67Gbc0GvP/gbR90GreqWBwztIU2ETV0CCYyavChDZrBdJzKepICBS0JMi6+eo1v45BhtUg1d+wkUAYg==
+    size: 192043994
+  - url: releases/0.5.3/PileaX-0.5.3-x64.exe
+    sha512: j9Icf9VOqerSLYpTdc27373lGltTCJGO+UbxwU74USmbvXNCdb4jZLZ4ci2HjE64u8V61bCfelAYsEcEDKX1HQ==
+    size: 163483024
+  - url: releases/0.5.3/PileaX-0.5.3.AppImage
+    sha512: 8kQdSFgnivOVTi98Jo/xlK0Sts72IwtnT7Sp8z1rn3t/ipTjhq2y4H5FyveLmSoxEGDwv/dC33hHnLZmGTH+Og==
+    size: 218744752
+    blockMapSize: 227268
+path: releases/0.5.3/PileaX-0.5.3-arm64.zip
+sha512: rXIgpB5zmGeAXwohuOCSVOloeU3fxlso2w4YdtWhiW5sk3PQZBsI3FSWXbrdhF5IwaM7saUSJpGVttAzGjotmA==
+releaseDate: '2026-05-13T16:03:32.286Z'
+releaseName: v0.5.3 📦
+releaseNotes: "# What's Changed\r\n\r\n## \U0001F41B Bug Fixes\r\n\r\n- fix: note\
+  \ cover (#77) @pileax\r\n- fix: upload book (#76) @pileax\r\n\r\n**Full Changelog**:\
+  \ [v0.5.2...v0.5.3](https://github.com/pileax-ai/pileax/compare/v0.5.2...v0.5.3)\r\
   \n"

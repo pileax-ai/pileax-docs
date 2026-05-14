@@ -8,7 +8,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-defineOptions({ name: 'OSvgIcon', inheritAttrs: true })
+defineOptions({ name: 'SvgIcon', inheritAttrs: true })
 const props = defineProps({
   name: {
     type: String,
