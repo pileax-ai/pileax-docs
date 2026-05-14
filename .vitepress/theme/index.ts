@@ -4,6 +4,8 @@ import type { EnhanceAppContext, Theme } from 'vitepress'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 // import { VPPluginTabs, VPPluginTab } from 'vitepress-plugin-tabs'
 // import "vitepress-plugin-tabs/style.css";
+import 'virtual:svg-icons-register'
+
 import { watchEffect, nextTick, watch } from 'vue'
 import { Download, Home, Features, GradientText, SvgIcon, VersionBadge } from './components'
 import 'aos/dist/aos.css'

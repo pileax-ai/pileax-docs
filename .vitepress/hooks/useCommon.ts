@@ -5,7 +5,6 @@ export default function () {
   const { lang } = useData()
 
   const t = (key: string) => {
-    console.log('lang', lang.value)
     return tr(lang.value, key)
   }
 
