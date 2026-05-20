@@ -85,6 +85,10 @@
         </div>
       </div>
     </div>
+
+    <div class="release-notes" data-aos="fade-up" data-aos-delay="500">
+      <note-viewer :content="config?.releaseNotes" markdown></note-viewer>
+    </div>
   </div>
 </template>
 
@@ -92,8 +96,7 @@
 import { computed, ref, onMounted } from 'vue'
 import yaml from 'js-yaml'
 import { tr } from '../../../i18n'
-import GradientText from '../GradientText.vue'
-import SvgIcon from '../SvgIcon.vue'
+import { NoteViewer, GradientText, SvgIcon } from '../index'
 
 
 interface UpdateConfigFile {
@@ -108,6 +111,7 @@ interface UpdateConfig {
   sha512: string
   files: UpdateConfigFile[]
   releaseDate?: string
+  releaseNotes: string
   [key: string]: any
 }
 
@@ -307,6 +311,10 @@ onMounted(() => {
       background-color: transparent!important;
       color: inherit !important;
     }
+  }
+
+  .release-notes {
+    margin: 40px 0 100px 0;
   }
 
   @media (min-width: 640px) {

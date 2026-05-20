@@ -6,7 +6,7 @@ title: Download
 
 <download></download>
 
-<div data-aos="fade-up" data-aos-delay="500">
+<div data-aos="fade-up">
 
 # Installation Instructions
 
@@ -18,7 +18,7 @@ title: Download
 </div>
 
 
-<div data-aos="fade-up" data-aos-delay="800">
+<div data-aos="fade-up">
 
 ## <svg-icon name="icon-microsoft-windows" size="28px" color="#0078d4" /> Windows
 1. Download the `.exe` installer.
