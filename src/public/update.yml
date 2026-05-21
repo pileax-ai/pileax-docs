@@ -1,27 +1,27 @@
 version: 0.6.0
 files:
   - url: releases/0.6.0/PileaX-0.6.0-arm64.zip
-    sha512: rfaNqcNbqKEGsF8fGezAeiou7n3Ammv23TL0tA4zSktrfX/jzkjMOBckLwn8TovvStUahFXB8nc2SXRWlcRP+g==
-    size: 179772091
+    sha512: kh3ee8DOAai4OcgRybvzY8IaGuFkTUYj2hZDb7TmKtJqsaI5AmYc+SqEEU3QEUYJTrtDQSgWAG8WGzzq8yObPw==
+    size: 179772694
   - url: releases/0.6.0/PileaX-0.6.0-arm64.dmg
-    sha512: WeSNju3En5hcmjQC4tE2K7zGiSiI2aApM+XSNrXKgRL0VJ3TK5jwcG+Q5n8phDMZWzl0dkhKE+Mqv1Ebk94qtw==
-    size: 183621910
+    sha512: mE7ZXeQ+ndOOMkieuxYPO/GaLxUIgodIJFyP01Z8fRevFPo5LD6/WuxH3qtYADuj7rmKdB/V7tPb9thneGMwFA==
+    size: 183614296
   - url: releases/0.6.0/PileaX-0.6.0-x64.zip
-    sha512: bptZ8yIT3IkIaLu985BFhzkmz6TdwstJz+a4RWVRoVaszyCcZYkt0CaSxjmNBeEaIAAzZcoOvU61l43FFf5PTw==
-    size: 188098997
+    sha512: TkHrIjVhev9R5IED6JsoQcgZAxSFekQL5aGkpj170+hIoVISXvi2KY/oKwlf7E+ehTkh+rXuHmTs/BZvIWembQ==
+    size: 188099171
   - url: releases/0.6.0/PileaX-0.6.0-x64.dmg
-    sha512: NOaFOJvSB5imBmnzd56SSISbkGytqHlW7a1WOLnU5jARID1I24Cvs48v+2c9BFj/zOANkKsYbOkEqDcq28+8vQ==
-    size: 192027326
+    sha512: HiS93Z7xBs+VKARCLiGwNXtA+ojO71MpB33QDLPQ9vg5HoNZN3MTkWPpst9BsLS5NKXskgrpv6zpJXPUjzZLgw==
+    size: 192030836
   - url: releases/0.6.0/PileaX-0.6.0-x64.exe
-    sha512: qBznLRinhXLlSXkZMFqU4EWYewX8YKROhyElCg5qnKu9GvJdQ2NTzNR2k+B0jZYaFsAlJ5VDG6mT4Y9C+mwp4Q==
-    size: 163500514
+    sha512: JIWjfFbcFjMnTd3tXyD+ce7UdyVrbuyPX9YZ2TxLhaFk4Z756m+84MTzlStrmrmIHcoldYbR0yiEIG3/Li4xhA==
+    size: 163499445
   - url: releases/0.6.0/PileaX-0.6.0.AppImage
-    sha512: R0cKz26B/wnFt68nfzT4V840o72RcuaAdQtAa4XFHB3//jPecTvSJdThl9rTIsvGtrgwK38Ar9jyzZzLsqQ6pg==
-    size: 218757062
-    blockMapSize: 227290
+    sha512: k6/EWm0V87lrQPodaKO6BiMVg1Ka/ef8Yu2i4zpJzzJiWxHsUQ8EF840UMGVcFLJ6RxTTyhcypNHVpBxHPFl0g==
+    size: 218761260
+    blockMapSize: 227392
 path: releases/0.6.0/PileaX-0.6.0-arm64.zip
-sha512: rfaNqcNbqKEGsF8fGezAeiou7n3Ammv23TL0tA4zSktrfX/jzkjMOBckLwn8TovvStUahFXB8nc2SXRWlcRP+g==
-releaseDate: '2026-05-20T07:30:44.302Z'
+sha512: kh3ee8DOAai4OcgRybvzY8IaGuFkTUYj2hZDb7TmKtJqsaI5AmYc+SqEEU3QEUYJTrtDQSgWAG8WGzzq8yObPw==
+releaseDate: '2026-05-21T08:33:14.451Z'
 releaseName: v0.6.0 📦
 releaseNotes: "# What's Changed\r\n\r\n## \U0001F680 Features\r\n\r\n- feat: pdf annotation\
   \ and scroll mode (#78) @pileax\r\n\r\n## ⚡ Enhancements\r\n\r\n- enhancement: electron\
