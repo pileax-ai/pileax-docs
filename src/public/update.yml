@@ -1,30 +1,32 @@
-version: 0.6.0
+version: 0.6.1
 files:
-  - url: releases/0.6.0/PileaX-0.6.0-arm64.zip
-    sha512: kh3ee8DOAai4OcgRybvzY8IaGuFkTUYj2hZDb7TmKtJqsaI5AmYc+SqEEU3QEUYJTrtDQSgWAG8WGzzq8yObPw==
-    size: 179772694
-  - url: releases/0.6.0/PileaX-0.6.0-arm64.dmg
-    sha512: mE7ZXeQ+ndOOMkieuxYPO/GaLxUIgodIJFyP01Z8fRevFPo5LD6/WuxH3qtYADuj7rmKdB/V7tPb9thneGMwFA==
-    size: 183614296
-  - url: releases/0.6.0/PileaX-0.6.0-x64.zip
-    sha512: TkHrIjVhev9R5IED6JsoQcgZAxSFekQL5aGkpj170+hIoVISXvi2KY/oKwlf7E+ehTkh+rXuHmTs/BZvIWembQ==
-    size: 188099171
-  - url: releases/0.6.0/PileaX-0.6.0-x64.dmg
-    sha512: HiS93Z7xBs+VKARCLiGwNXtA+ojO71MpB33QDLPQ9vg5HoNZN3MTkWPpst9BsLS5NKXskgrpv6zpJXPUjzZLgw==
-    size: 192030836
-  - url: releases/0.6.0/PileaX-0.6.0-x64.exe
-    sha512: JIWjfFbcFjMnTd3tXyD+ce7UdyVrbuyPX9YZ2TxLhaFk4Z756m+84MTzlStrmrmIHcoldYbR0yiEIG3/Li4xhA==
-    size: 163499445
-  - url: releases/0.6.0/PileaX-0.6.0.AppImage
-    sha512: k6/EWm0V87lrQPodaKO6BiMVg1Ka/ef8Yu2i4zpJzzJiWxHsUQ8EF840UMGVcFLJ6RxTTyhcypNHVpBxHPFl0g==
-    size: 218761260
-    blockMapSize: 227392
-path: releases/0.6.0/PileaX-0.6.0-arm64.zip
-sha512: kh3ee8DOAai4OcgRybvzY8IaGuFkTUYj2hZDb7TmKtJqsaI5AmYc+SqEEU3QEUYJTrtDQSgWAG8WGzzq8yObPw==
-releaseDate: '2026-05-21T08:33:14.451Z'
-releaseName: v0.6.0 📦
-releaseNotes: "# What's Changed\r\n\r\n## \U0001F680 Features\r\n\r\n- feat: pdf annotation\
-  \ and scroll mode (#78) @pileax\r\n\r\n## ⚡ Enhancements\r\n\r\n- enhancement: electron\
-  \ window id (#79) @pileax\r\n\r\n## \U0001F41B Bug Fixes\r\n\r\n- fix: book note\
-  \ TOC (#81) @pileax\r\n- fix: bugs (#80) @pileax\r\n\r\n**Full Changelog**: [v0.5.3...v0.6.0](https://github.com/pileax-ai/pileax/compare/v0.5.3...v0.6.0)\r\
+  - url: releases/0.6.1/PileaX-0.6.1-arm64.zip
+    sha512: Vr1w3lgjVxCtTgF4OPlTOVIdJy3dr7JUu7G+t0ZXMf5BnWWtd/I1f5aAtKzSjYFue0mBL90K0avJZUoF3dA4TQ==
+    size: 179829063
+  - url: releases/0.6.1/PileaX-0.6.1-arm64.dmg
+    sha512: 1s8av813rYHMCjgQ+7Q2+yS1HDoJi+aDPODCz4XNObzeujC9JHWh9KKuMEZCTIPdJ+UPTPzJD1MnNzRNJzXfFA==
+    size: 183687805
+  - url: releases/0.6.1/PileaX-0.6.1-x64.zip
+    sha512: y0zfBImaE5pe1L3JtRJCVX38haNkFrpjRi40Pf0Vz4n9lAoRzu+Q5/4TRnw9l7lQD5HNBxB6B1rv08x//kfhUg==
+    size: 188155040
+  - url: releases/0.6.1/PileaX-0.6.1-x64.dmg
+    sha512: porSiRtsa6GEP3BYC8nzA4FJw4MiawdHRpfpLYT4jb9AvBb27W4g/kPvVnbmVWJAziCmjU1uFtn+L9y3SOm9Vw==
+    size: 192123760
+  - url: releases/0.6.1/PileaX-0.6.1-x64.exe
+    sha512: YE+8w+sO/937wZ1cgTPIqKogLahUo/qWrqRjVpZmK+0iFpDp4/D6ioc0Kiv6G2AWDdEtx/1C/BkUAIV6iYLrUg==
+    size: 163514319
+  - url: releases/0.6.1/PileaX-0.6.1.AppImage
+    sha512: fmYDZ81cQqW32Sjqg+vvyliztz9twJrtWdo3MChZV2MEuaVmbU3HmlIFs4w3o6vRqRAi9L32HhcZXOM+Q/ACfQ==
+    size: 218810521
+    blockMapSize: 227501
+path: releases/0.6.1/PileaX-0.6.1-arm64.zip
+sha512: Vr1w3lgjVxCtTgF4OPlTOVIdJy3dr7JUu7G+t0ZXMf5BnWWtd/I1f5aAtKzSjYFue0mBL90K0avJZUoF3dA4TQ==
+releaseDate: '2026-05-31T17:57:08.552Z'
+releaseName: v0.6.1 📦
+releaseNotes: "# What's Changed\r\n\r\n## \U0001F680 Features\r\n\r\n- feat: inject\
+  \ book css (#87) @pileax\r\n- feat: book image previewer (#86) @pileax\r\n- feat:\
+  \ set window title (#85) @pileax\r\n- feat: book metadata (#83) @pileax\r\n\r\n\
+  ## ⚡ Enhancements\r\n\r\n- enhancement: tts (#84) @pileax\r\n- enhancement: book\
+  \ publish year (#82) @pileax\r\n\r\n## \U0001F41B Bug Fixes\r\n\r\n- fix: footnote\
+  \ styles (#88) @pileax\r\n\r\n**Full Changelog**: [v0.6.0...v0.6.1](https://github.com/pileax-ai/pileax/compare/v0.6.0...v0.6.1)\r\
   \n"

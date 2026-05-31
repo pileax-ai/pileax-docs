@@ -1,6 +1,6 @@
 {
   "name": "pileax-docs",
-  "version": "0.4.0",
+  "version": "0.6.1",
   "description": "Documentation for PileaX",
   "keywords": [
     "vitepress",
