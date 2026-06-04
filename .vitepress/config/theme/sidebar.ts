@@ -1,8 +1,8 @@
 import { tr } from '../../i18n';
 
 export function sidebarGuide(locale :string) {
-  const t = (key :string) => {
-    return tr(locale, `sidebar.${key}`);
+  const t = (key :string, global = false) => {
+    return tr(locale, `${global ? '' : 'sidebar.'}${key}`);
   }
   return [
     {
@@ -30,11 +30,10 @@ export function sidebarGuide(locale :string) {
       ]
     },
     // {
-    //   text: t('config'),
+    //   text: t('reading', true),
     //   collapsed: false,
     //   items: [
-    //     { text: t('overview'), link: 'config/overview' },
-    //     { text: 'AI', link: 'config/ai' },
+    //     { text: t('fonts', true), link: 'reading/fonts/' },
     //   ]
     // },
     // {

@@ -33,11 +33,13 @@
               </div>
               <div class="actions">
                 <div class="action" v-for="(item, index) in macosFiles" :key="`macos-${index}`">
-                  <a class="VPButton medium brand"
-                     :class="{ 'outline': item.url.indexOf('x64') > 0 }"
-                     :href="`${fileBaseUrl}/${item.url}`">
+                  <pi-button class="brand"
+                             :class="{ 'outline': item.url.indexOf('x64') > 0 }"
+                             icon="download"
+                             icon-size="20px"
+                             :href="`${fileBaseUrl}/${item.url}`">
                     {{ item.url.indexOf('x64') > 0 ? 'Intel' : 'Apple Silicon' }}
-                  </a>
+                  </pi-button>
                 </div>
               </div>
             </article>
@@ -53,11 +55,13 @@
               </div>
               <div class="actions">
                 <div class="action" v-for="(item, index) in windowsFiles" :key="`windows-${index}`">
-                  <a class="VPButton medium brand"
-                     :class="{ 'outline': item.url.indexOf('x86') > 0 }"
-                     :href="`${fileBaseUrl}/${item.url}`">
+                  <pi-button class="brand"
+                             :class="{ 'outline': item.url.indexOf('x86') > 0 }"
+                             icon="download"
+                             icon-size="20px"
+                             :href="`${fileBaseUrl}/${item.url}`">
                     {{ t('installer') }} {{ item.url.indexOf('x86') > 0 ? 'x86' : 'x86_64' }}
-                  </a>
+                  </pi-button>
                 </div>
               </div>
             </article>
@@ -72,12 +76,14 @@
                 <div class="caption">Ubuntu, Debian, etc.</div>
               </div>
               <div class="actions">
-                <div class="action" v-for="(item, index) in linuxFiles" :key="`windows-${index}`">
-                  <a class="VPButton medium brand"
-                     :class="{ 'outline': item.url.indexOf('x86') > 0 }"
-                     :href="`${fileBaseUrl}/${item.url}`">
-                    AppImage {{ item.url.indexOf('x86') > 0 ? 'x86' : 'x86_64' }}
-                  </a>
+                <div class="action" v-for="(item, index) in linuxFiles" :key="`linux-${index}`">
+                  <pi-button class="brand"
+                             :class="{ 'outline': item.url.indexOf('AppImage') > 0 }"
+                             icon="download"
+                             icon-size="20px"
+                             :href="`${fileBaseUrl}/${item.url}`">
+                    {{ item.url.indexOf('deb') > 0 ? 'deb arm64' : 'AppImage x86_64' }}
+                  </pi-button>
                 </div>
               </div>
             </article>
@@ -96,7 +102,7 @@
 import { computed, ref, onMounted } from 'vue'
 import yaml from 'js-yaml'
 import { tr } from '../../../i18n'
-import { NoteViewer, GradientText, SvgIcon } from '../index'
+import { NoteViewer, GradientText, SvgIcon, PiButton } from '../index'
 
 
 interface UpdateConfigFile {
@@ -133,7 +139,7 @@ const windowsFiles = computed(() => {
   return config.value?.files?.filter(item => item.url.indexOf('exe') > 0) || []
 })
 const linuxFiles = computed(() => {
-  return config.value?.files?.filter(item => item.url.indexOf('AppImage') > 0) || []
+  return config.value?.files?.filter(item => item.url.indexOf('AppImage') > 0 || item.url.indexOf('deb') > 0) || []
 })
 
 const t = (key: string) => {
@@ -279,37 +285,15 @@ onMounted(() => {
     .action:not(:first-child) {
       margin-top: 10px;
     }
-  }
 
-  .VPButton {
-    display: inline-block;
-    border: 1px solid transparent;
-    text-align: center;
-    font-weight: 600;
-    white-space: nowrap;
-    transition: color 0.25s, border-color 0.25s, background-color 0.25s;
-    border-radius: 10px;
-    padding: 0 20px;
-    line-height: 38px;
-    font-size: 14px;
-    text-decoration: none;
-    width: 100%;
-    max-width: 200px;
+    .pi-button {
+      padding: 0 20px;
 
-    &:hover {
-      filter: brightness(1.2);
-    }
-
-    &.brand  {
-      border-color: var(--vp-button-brand-border);
-      color: var(--vp-button-brand-text);
-      background-color: var(--vp-button-brand-bg);
-    }
-
-    &.outline {
-      border-color: var(--vp-button-brand-bg);
-      background-color: transparent!important;
-      color: inherit !important;
+      &.outline {
+        border-color: var(--vp-button-brand-bg);
+        background-color: transparent!important;
+        color: inherit !important;
+      }
     }
   }
 

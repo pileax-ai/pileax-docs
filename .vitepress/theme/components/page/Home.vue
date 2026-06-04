@@ -100,7 +100,6 @@ import { useData } from 'vitepress'
 import useCommon from '../../../hooks/useCommon'
 
 import { PiButton, Features, FeatureCard, GradientText } from '../index'
-import SvgIcon from '../SvgIcon.vue'
 
 const { isDark } = useData()
 const { t } = useCommon()

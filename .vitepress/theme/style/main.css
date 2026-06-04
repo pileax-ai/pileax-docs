@@ -124,3 +124,26 @@ h1:has(svg), h2:has(svg) {
         margin-right: 12px;
     }
 }
+
+@font-face {
+    font-family: 'LXGWWenKaiLite';
+    src: url("/fonts/lxgw-wenkai-lite/LXGWWenKaiMonoLite-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Yozai';
+    src: url("/fonts/yozai/Yozai-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Yozai';
+    src: url("/fonts/yozai/Yozai-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Yozai';
+    src: url("/fonts/yozai/Yozai-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
