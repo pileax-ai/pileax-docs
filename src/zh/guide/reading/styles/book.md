@@ -13,3 +13,12 @@
     opacity: 1;
 }
 ```
+
+### 选择同级节点
+选择 `.yiwen` 后第一个p节点：
+```shell
+.yiwen + p {
+    font-family: "STKaiti", STKai, "MKai PRC", Kai, "楷体", serif !important;
+    line-height: 1.2 !important;
+}
+```
