@@ -1,9 +1,10 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, type DefaultTheme } from 'vitepress'
 import { nav } from './theme/nav'
 import { sidebarGuide } from './theme/sidebar'
 import { labels } from './theme/labels'
 import { name, description, docsRepo } from '../meta'
 import { getPosts } from '../theme/utils/serverUtil'
+import { CustomThemeConfig } from '../theme'
 
 const locale = 'en';
 
@@ -12,7 +13,7 @@ export default async () => {
     getPosts(locale),
   ])
 
-  return defineConfig({
+  return defineConfig<CustomThemeConfig>({
     title: name,
     description: description,
     themeConfig: {

@@ -3,9 +3,10 @@ import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons-ng'
 import { resolve } from 'node:path'
 import { keywords, name, repo } from '../meta'
+import { CustomThemeConfig } from '../theme'
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default defineConfig<CustomThemeConfig>({
   srcDir: './src',
   rewrites: {
     'en/:rest*': ':rest*'
@@ -23,6 +24,11 @@ export default defineConfig({
       //   apiKey: '4338f265da64e33025f821af827dd22e',
       //   indexName: 'pileax'
       // }
+    },
+    comment: {
+      repo: 'pileax-ai/pileax',
+      repoId: 'R_kgDOQeykvg',
+      categoryId: 'DIC_kwDOQeykvs4C_dNh'
     },
     outline: 'deep',
     socialLinks: [

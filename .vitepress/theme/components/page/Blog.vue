@@ -16,7 +16,8 @@
           <div class="tags" v-if="item.frontMatter.tags">
             <div class="tag"
                  v-for="(tag, index) in item.frontMatter.tags"
-                 :key="index" @click="openUrl(`/pages/tags?tag=${tag}`)">
+                 :key="index"
+                 @click="openUrl(`/pages/tags?tag=${tag}`)">
               {{ tag }}
             </div>
           </div>

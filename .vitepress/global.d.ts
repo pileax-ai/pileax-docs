@@ -17,6 +17,5 @@ declare global {
     color?: string;
     tips?: string;
   }
-
 }
 export {}

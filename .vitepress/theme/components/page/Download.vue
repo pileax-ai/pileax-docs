@@ -169,6 +169,13 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
+.VPHome:has(.download-page) {
+  h1 {
+    font-size: 42px;
+    text-align: center !important;
+  }
+}
+
 .download-page {
   .banner {
     margin-top: 40px;
@@ -176,8 +183,11 @@ onMounted(() => {
 
     .name {
       display: inline-flex;
-      font-size: 52px;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
+      font-size: 52px;
+      line-height: 1.2;
     }
 
     .desc {
@@ -288,6 +298,7 @@ onMounted(() => {
 
     .pi-button {
       padding: 0 20px;
+      width: 100%;
 
       &.outline {
         border-color: var(--vp-button-brand-bg);

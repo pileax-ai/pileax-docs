@@ -4,6 +4,8 @@ export { default as Blog } from './page/Blog.vue'
 export { default as Download } from './page/Download.vue'
 export { default as Home } from './page/Home.vue'
 export { default as PiButton } from './common/Button.vue'
+// @ts-ignore
+export { default as CommentGiscus } from './common/CommentGiscus.vue'
 export { default as Features } from './common/Features.vue'
 export { default as FeatureCard } from './common/FeatureCard.vue'
 export { default as GradientText } from './common/GradientText.vue'

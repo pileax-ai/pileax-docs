@@ -4,6 +4,7 @@ import { sidebarGuide } from './theme/sidebar'
 import { labels } from './theme/labels'
 import { name, docsRepo, descriptionZh } from '../meta'
 import { getPosts } from '../theme/utils/serverUtil'
+import { CustomThemeConfig } from '../theme'
 
 const locale = 'zh';
 
@@ -12,7 +13,7 @@ export default async () => {
     getPosts(locale),
   ])
 
-  return defineConfig({
+  return defineConfig<CustomThemeConfig>({
     title: name,
     description: descriptionZh,
     themeConfig: {
