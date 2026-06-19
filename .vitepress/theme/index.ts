@@ -1,6 +1,7 @@
 import DefaultTheme from 'vitepress/theme'
 import { useData, useRoute } from 'vitepress'
 import type { EnhanceAppContext, Theme } from 'vitepress'
+import { VpvImage, VpvImageGallery } from '@cynber/vitepress-valence'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 // import { VPPluginTabs, VPPluginTab } from 'vitepress-plugin-tabs'
 // import "vitepress-plugin-tabs/style.css";
@@ -18,23 +19,32 @@ import {
   Tags,
   VersionBadge
 } from './components'
+import { data as galleryData } from './data/gallery.data.ts'
 import 'aos/dist/aos.css'
 import './style/main.css'
 import './style/vars.css'
+import '@cynber/vitepress-valence/style.css'
 
 const theme = {
   extends: DefaultTheme,
   Layout: CustomLayout,
   enhanceApp({ app, router }: EnhanceAppContext) {
-    // components
+    // pages
     app.component('Blog', Blog)
     app.component('Download', Download)
     app.component('Home', Home)
+    app.component('Tags', Tags)
+
+    // components
     app.component('Features', Features)
     app.component('GradientText', GradientText)
     app.component('SvgIcon', SvgIcon)
-    app.component('Tags', Tags)
     app.component('VersionBadge', VersionBadge)
+
+    // libs
+    app.component('VpvImage', VpvImage)
+    app.component('VpvImageGallery', VpvImageGallery)
+    app.provide('galleryData', galleryData)
     // app.component('VPPluginTabs', VPPluginTabs)
     // app.component('VPPluginTab', VPPluginTab)
 

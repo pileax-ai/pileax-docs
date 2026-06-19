@@ -59,6 +59,7 @@ export default defineConfig<CustomThemeConfig>({
         ],
       }),
     ],
+    ssr: { noExternal: ['@cynber/vitepress-valence']}
   },
 
 })

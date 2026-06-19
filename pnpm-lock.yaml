@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@cynber/vitepress-valence':
+        specifier: ^0.2.2
+        version: 0.2.2(@iconify/vue@4.3.0(vue@3.5.29))(vitepress@2.0.0-alpha.16(@types/node@25.7.0)(postcss@8.5.8)(sass-embedded@1.99.0)(sass@1.99.0))(vue@3.5.29)
       '@mermaid-js/layout-elk':
         specifier: ^0.2.0
         version: 0.2.1(mermaid@11.15.0)
@@ -100,6 +103,13 @@ packages:
 
   '@chevrotain/types@11.1.2':
     resolution: {integrity: sha512-U+HFai5+zmJCkK86QsaJtoITlboZHBqrVketcO2ROv865xfCMSFpELQoz1GkX5GzME8pTa+3kbKrZHQtI0gdbw==}
+
+  '@cynber/vitepress-valence@0.2.2':
+    resolution: {integrity: sha512-WSsOxc1EALp7OfmbeyNx12QergG0xWnz9C2JVIQASVxB3zg0MYHs5xYUgNtdKo+kqmxHN17M3vXB5t/obhmKYQ==}
+    peerDependencies:
+      '@iconify/vue': ^4.1.2
+      vitepress: ^1.0.0
+      vue: ^3.3.0
 
   '@docsearch/css@4.6.0':
     resolution: {integrity: sha512-YlcAimkXclvqta47g47efzCM5CFxDwv2ClkDfEs/fC/Ak0OxPH2b3czwa4o8O1TRBf+ujFF2RiUwszz2fPVNJQ==}
@@ -288,6 +298,11 @@ packages:
 
   '@iconify/utils@3.1.3':
     resolution: {integrity: sha512-LPKOXPn/zV+zis1oOfGWogaXVpqUybF3ZS6SCZIsz8vg0ivVp9+fVqyYB7xq0aiST/VhUQYGO1qo6uoYSiEJqw==}
+
+  '@iconify/vue@4.3.0':
+    resolution: {integrity: sha512-Xq0h6zMrHBbrW8jXJ9fISi+x8oDQllg5hTDkDuxnWiskJ63rpJu9CvJshj8VniHVTbsxCg9fVoPAaNp3RQI5OQ==}
+    peerDependencies:
+      vue: '>=3'
 
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
@@ -1503,6 +1518,9 @@ packages:
   dagre-d3-es@7.0.14:
     resolution: {integrity: sha512-P4rFMVq9ESWqmOgK+dlXvOtLwYg0i7u0HBGJER0LZDJT2VHIPAMZ/riPxqJceWMStH5+E61QxFra9kIS3AqdMg==}
 
+  date-fns@4.4.0:
+    resolution: {integrity: sha512-+1UMbeh68lH1SegH83CGWwpb6OHHbpSgr3+s5Eww5M4CAgswBpoWS0AjTOfEJ33HiYKz1hdj/KTFprzXHmq/6w==}
+
   dayjs@1.11.20:
     resolution: {integrity: sha512-YbwwqR/uYpeoP4pu043q+LTDLFBLApUP6VxRihdfNTqu4ubqMlGDLd6ErXhEgsyvY0K6nCs7nggYumAN+9uEuQ==}
 
@@ -1761,6 +1779,9 @@ packages:
   mdurl@2.0.0:
     resolution: {integrity: sha512-Lf+9+2r+Tdp5wXDXC4PcIBjTDtq4UKjCPMQhKIuzpJNW0b96kVqSwW0bT7FhRSfmAiFYgP+SCRvdrDozfh0U5w==}
 
+  medium-zoom@1.1.0:
+    resolution: {integrity: sha512-ewyDsp7k4InCUp3jRmwHBRFGyjBimKps/AJLjRSox+2q/2H4p/PNpQf+pwONWlJiOudkBXtbdmVbFjqyybfTmQ==}
+
   merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
@@ -1822,6 +1843,10 @@ packages:
 
   perfect-debounce@2.1.0:
     resolution: {integrity: sha512-LjgdTytVFXeUgtHZr9WYViYSM/g8MkcTPYDlPa3cDqMirHjKiSZPYd6DoL7pK8AJQr+uWkQvCjHNdiMqsrJs+g==}
+
+  photoswipe@5.4.4:
+    resolution: {integrity: sha512-WNFHoKrkZNnvFFhbHL93WDkW3ifwVOXSW3w1UuZZelSmgXpIGiZSNlZJq37rR8YejqME2rHs9EhH9ZvlvFH2NA==}
+    engines: {node: '>= 0.12.0'}
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
@@ -2292,6 +2317,15 @@ snapshots:
 
   '@chevrotain/types@11.1.2': {}
 
+  '@cynber/vitepress-valence@0.2.2(@iconify/vue@4.3.0(vue@3.5.29))(vitepress@2.0.0-alpha.16(@types/node@25.7.0)(postcss@8.5.8)(sass-embedded@1.99.0)(sass@1.99.0))(vue@3.5.29)':
+    dependencies:
+      '@iconify/vue': 4.3.0(vue@3.5.29)
+      date-fns: 4.4.0
+      medium-zoom: 1.1.0
+      photoswipe: 5.4.4
+      vitepress: 2.0.0-alpha.16(@types/node@25.7.0)(postcss@8.5.8)(sass-embedded@1.99.0)(sass@1.99.0)
+      vue: 3.5.29
+
   '@docsearch/css@4.6.0': {}
 
   '@docsearch/js@4.6.0': {}
@@ -2403,6 +2437,11 @@ snapshots:
       '@antfu/install-pkg': 1.1.0
       '@iconify/types': 2.0.0
       import-meta-resolve: 4.2.0
+
+  '@iconify/vue@4.3.0(vue@3.5.29)':
+    dependencies:
+      '@iconify/types': 2.0.0
+      vue: 3.5.29
 
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
@@ -3650,6 +3689,8 @@ snapshots:
       d3: 7.9.0
       lodash-es: 4.18.1
 
+  date-fns@4.4.0: {}
+
   dayjs@1.11.20: {}
 
   delaunator@5.1.0:
@@ -3938,6 +3979,8 @@ snapshots:
 
   mdurl@2.0.0: {}
 
+  medium-zoom@1.1.0: {}
+
   merge2@1.4.1: {}
 
   mermaid@11.15.0:
@@ -4014,6 +4057,8 @@ snapshots:
   path-expression-matcher@1.5.0: {}
 
   perfect-debounce@2.1.0: {}
+
+  photoswipe@5.4.4: {}
 
   picocolors@1.1.1: {}
 

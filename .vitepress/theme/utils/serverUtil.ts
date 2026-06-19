@@ -39,7 +39,6 @@ export async function getPosts(lang = 'en'): Promise<Post[]> {
       const path = lang === 'en'
         ? filePath.replace(`src/en/`, '')
         : filePath.replace(`src/`, '')
-      console.log('path', path)
 
       return {
         frontMatter: data as PostFrontMatter,
@@ -47,8 +46,6 @@ export async function getPosts(lang = 'en'): Promise<Post[]> {
       }
     }),
   )
-
-  console.log('posts', posts)
 
   posts.sort(compareDateDesc)
   return posts

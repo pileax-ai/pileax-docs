@@ -16,7 +16,14 @@ tags:
 
 ### 纹理
 
+<VpvImage :imageConfig="{image: '/screenshots/main.gif'}" enableZoom />
+
 ### 自定义CSS
+<VpvImageGallery 
+    layout="full"
+    headerTitle="Title"
+    :folders="['/gallery/textures']" 
+/>
 
 ### 自定义选项
 
