@@ -1,3 +1,6 @@
+export { default as CustomLayout } from './layout/CustomLayout.vue'
+export { default as Tags } from './page/Tags.vue'
+export { default as Blog } from './page/Blog.vue'
 export { default as Download } from './page/Download.vue'
 export { default as Home } from './page/Home.vue'
 export { default as PiButton } from './common/Button.vue'

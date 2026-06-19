@@ -125,6 +125,56 @@ h1:has(svg), h2:has(svg) {
     }
 }
 
+.post {
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+            color: var(--vp-c-brand) !important;
+        }
+    }
+    h1 {
+        letter-spacing: -0.02em;
+        line-height: 40px;
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+
+    .meta {
+        display: flex;
+        align-items: center;
+
+        .date {
+            font-size: 0.85rem;
+            color: var(--vp-c-text-3);
+        }
+
+        .tags {
+            display: flex;
+            margin: 0 8px;
+
+            .tag {
+                display: inline-block;
+                font-size: 0.7rem;
+                padding: 0 6px;
+                background: rgba(45, 169, 135, 0.10);
+                color: #2da987;
+                border-radius: 6px;
+                margin-right: 6px;
+                letter-spacing: 0.04em;
+                font-weight: 700;
+                border: 1px solid transparent;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.VPDoc:not(.has-sidebar) .content {
+    max-width: unset !important;
+}
+
 @font-face {
     font-family: 'LXGWWenKaiLite';
     src: url("/fonts/lxgw-wenkai-lite/LXGWWenKaiMonoLite-Medium.ttf") format("truetype");

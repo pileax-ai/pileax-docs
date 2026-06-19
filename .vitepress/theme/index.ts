@@ -7,20 +7,33 @@ import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
 import 'virtual:svg-icons-register'
 
 import { watchEffect, nextTick, watch } from 'vue'
-import { Download, Home, Features, GradientText, SvgIcon, VersionBadge } from './components'
+import {
+  CustomLayout,
+  Blog,
+  Download,
+  Home,
+  Features,
+  GradientText,
+  SvgIcon,
+  Tags,
+  VersionBadge
+} from './components'
 import 'aos/dist/aos.css'
 import './style/main.css'
 import './style/vars.css'
 
 const theme = {
   extends: DefaultTheme,
+  Layout: CustomLayout,
   enhanceApp({ app, router }: EnhanceAppContext) {
     // components
+    app.component('Blog', Blog)
     app.component('Download', Download)
     app.component('Home', Home)
     app.component('Features', Features)
     app.component('GradientText', GradientText)
     app.component('SvgIcon', SvgIcon)
+    app.component('Tags', Tags)
     app.component('VersionBadge', VersionBadge)
     // app.component('VPPluginTabs', VPPluginTabs)
     // app.component('VPPluginTab', VPPluginTab)

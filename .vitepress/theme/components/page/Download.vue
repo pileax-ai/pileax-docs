@@ -37,7 +37,7 @@
                              :class="{ 'outline': item.url.indexOf('x64') > 0 }"
                              icon="download"
                              icon-size="20px"
-                             :href="`${fileBaseUrl}/${item.url}`">
+                             :to="`${fileBaseUrl}/${item.url}`">
                     {{ item.url.indexOf('x64') > 0 ? 'Intel' : 'Apple Silicon' }}
                   </pi-button>
                 </div>
@@ -59,7 +59,7 @@
                              :class="{ 'outline': item.url.indexOf('x86') > 0 }"
                              icon="download"
                              icon-size="20px"
-                             :href="`${fileBaseUrl}/${item.url}`">
+                             :to="`${fileBaseUrl}/${item.url}`">
                     {{ t('installer') }} {{ item.url.indexOf('x86') > 0 ? 'x86' : 'x86_64' }}
                   </pi-button>
                 </div>
@@ -81,7 +81,7 @@
                              :class="{ 'outline': item.url.indexOf('AppImage') > 0 }"
                              icon="download"
                              icon-size="20px"
-                             :href="`${fileBaseUrl}/${item.url}`">
+                             :to="`${fileBaseUrl}/${item.url}`">
                     {{ item.url.indexOf('deb') > 0 ? 'deb arm64' : 'AppImage x86_64' }}
                   </pi-button>
                 </div>

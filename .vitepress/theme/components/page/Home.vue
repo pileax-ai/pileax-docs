@@ -29,7 +29,7 @@
         <pi-button class="brand"
                    icon="download"
                    icon-size="24px"
-                   href="/download">
+                   to="/download">
           {{ t('download') }}
         </pi-button>
       </div>
@@ -38,7 +38,7 @@
                    icon="github"
                    icon-size="24px"
                    label="Github"
-                   href="https://github.com/pileax-ai/pileax"
+                   to="https://github.com/pileax-ai/pileax"
                    target="_blank">
         </pi-button>
       </div>
@@ -176,7 +176,7 @@ const subFeatures = computed(() => {
     gap: 24px;
     margin-top: 100px;
 
-    .action {
+    .action .pi-button {
       width: 200px;
     }
 

@@ -4,18 +4,22 @@ import enConfig from './en.mjs'
 import zhConfig from './zh.mjs'
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
-  ...commonConfig,
-  locales: {
-    root: {
-      label: 'English',
-      lang: 'en',
-      ...enConfig
-    },
-    zh: {
-      label: '中文',
-      lang: 'zh',
-      ...zhConfig
+export default async () => {
+  const en = await enConfig()
+  const zh = await zhConfig()
+  return defineConfig({
+    ...commonConfig,
+    locales: {
+      root: {
+        label: 'English',
+        lang: 'en',
+        ...en
+      },
+      zh: {
+        label: '中文',
+        lang: 'zh',
+        ...zh
+      }
     }
-  }
-})
+  })
+}
