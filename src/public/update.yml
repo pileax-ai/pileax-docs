@@ -1,39 +1,37 @@
-version: 0.6.3
+version: 0.6.4
 files:
-  - url: releases/0.6.3/PileaX-0.6.3-arm64.zip
-    sha512: RAbPFselEPi6E5XZD5O9CSyo87/7EcL2eLuePz6AHakzFbszE8YnIgRMgPXvz8lbXMp9JU/R6lAjUi7uEEsgDA==
-    size: 179904186
-  - url: releases/0.6.3/PileaX-0.6.3-arm64.dmg
-    sha512: L/+Anfi1gevqyau+xMxh0rpIA9W/O7YxDW5Sa9toDCgHBM7C0lQj4/3EtBeL9lP8yZe/7eE7FBxXDpXcQJThgQ==
-    size: 183733153
-  - url: releases/0.6.3/PileaX-0.6.3-x64.zip
-    sha512: A2WMXK06hcgJNl0uJJne7Ft1axahuGh5Wpe9xtvfCqFIjwTXebl3LDEECdMOByBxTHaL5WV1VssHctIWq7FH+g==
-    size: 188228674
-  - url: releases/0.6.3/PileaX-0.6.3-x64.dmg
-    sha512: xa6rHtkGmhD5EENYEMW4IKVPte155gqnntlb23OcfyLbosQCNaP3Ek4IGNpzfS3+m1hXp44C0NyYybR1bSC43w==
-    size: 192187067
-  - url: releases/0.6.3/PileaX-0.6.3-x64.exe
-    sha512: 0q5m0wSP3O5FugXCnJboJAY2AotmiGHVtRF4orTzEmRb8B7Jr2z/gYmhYDfhdSYJAyzbO0qk+Mpq/DtAGmLgEQ==
-    size: 163565115
-  - url: releases/0.6.3/PileaX-0.6.3-x86_64.AppImage
-    sha512: U2TWHFacnsy9CCLhPNEDx82fLyjMDmVouLjY8DPnKeYWVTINqmNQAU0KAqS14u8fuC15MCMC/ai0p+sMaedCHw==
-    size: 218851818
-    blockMapSize: 227838
-  - url: releases/0.6.3/PileaX-0.6.3-amd64.deb
-    sha512: zV6FnofT4Q//pLDEiTz6j0FzMwSA33/ZxRAKN2+JRfkvXYDK7Pc1EOBkpgFJCkS+gRCQIbhF5LO5+LsYf3oTTQ==
-    size: 177732340
-path: releases/0.6.3/PileaX-0.6.3-arm64.zip
-sha512: RAbPFselEPi6E5XZD5O9CSyo87/7EcL2eLuePz6AHakzFbszE8YnIgRMgPXvz8lbXMp9JU/R6lAjUi7uEEsgDA==
-releaseDate: '2026-06-17T09:19:01.041Z'
-releaseName: v0.6.3 📦
-releaseNotes: "# What's Changed\r\n\r\n## \U0001F680 Features\r\n\r\n- feat: book\
-  \ custom options (#106) @pileax\r\n- feat: book reader background texture (#105)\
-  \ @pileax\r\n- feat: book export and import (#103) @pileax\r\n- feat: book global\
-  \ and independent CSS (#102) @pileax\r\n- feat: group and search annotation by book\
-  \ (#98) @pileax\r\n\r\n## ⚡ Enhancements\r\n\r\n- enhancement: book extra properties\
-  \ and styles (#104) @pileax\r\n- enhancement: workspace (#101) @pileax\r\n- enhancement:\
-  \ reader font weight (#97) @pileax\r\n\r\n## \U0001F41B Bug Fixes\r\n\r\n- fix:\
-  \ bugs (#100) @pileax\r\n\r\n## \U0001F916 Maintenance\r\n\r\n- chore(deps): bump\
-  \ hoverkraft-tech/compose-action from 2.6.0 to 3.0.0 (#99) @[dependabot[bot]](https://github.com/apps/dependabot)\r\
-  \n\r\n**Full Changelog**: [v0.6.2...v0.6.3](https://github.com/pileax-ai/pileax/compare/v0.6.2...v0.6.3)\r\
+  - url: releases/0.6.4/PileaX-0.6.4-arm64.zip
+    sha512: 6XgW1DuUwepR5hhkj/mbHQsRnxNbAH8pkWdLNYwANyri0tdOoworfn96Far0ZHj62S+wFKB67JuQdIx1CydPpA==
+    size: 179539457
+  - url: releases/0.6.4/PileaX-0.6.4-arm64.dmg
+    sha512: pbAX7Ky9oCUXgPqdUJUzSVVa2gQ01iOotGM0E7m/39ZRTx+2q9REXG5PTHpATg2imCS7TtGgd5O5n2CHlB2KYA==
+    size: 183375480
+  - url: releases/0.6.4/PileaX-0.6.4-x64.zip
+    sha512: 4i14wjuLviYaV/S4z48oSE6uf25CrZeJJmN0ajnqOmmeEviA+xCI7sxEhPMZDMzvjIGFkUQ901qhvgaKQw87cA==
+    size: 187863075
+  - url: releases/0.6.4/PileaX-0.6.4-x64.dmg
+    sha512: 24+eeBaoBiaVyJCERiMB95cHTVs54RfgJmlu37SKR7PFGavNDOKIJKq7mvani7R0KVj5ZYtI+9vYKpO3L2omVQ==
+    size: 191780551
+  - url: releases/0.6.4/PileaX-0.6.4-x64.exe
+    sha512: wDyXDQjionrSle6ZQRkRqiR39Q26ohj9vcPqnSkyaamS6JOpr3L1H7cOXUSSnWAu9mUWzIzZvZf2daRd/r4ITw==
+    size: 163195887
+  - url: releases/0.6.4/PileaX-0.6.4-x86_64.AppImage
+    sha512: UUdI7A9CWr6T7e/0LHWc8AvmcCz2gEn9PNTROPcSsfSDPcykx/SsJO1stoohJ9FSZENhAwaCDJAr3GrKdrToNA==
+    size: 218491292
+    blockMapSize: 227760
+  - url: releases/0.6.4/PileaX-0.6.4-amd64.deb
+    sha512: hJSliy1kQIfzWYbZmM9eQwPpMAp5l9T9iHk0UhRFU88wQpuTAanAb3NQsGv73YMVmhEdCPL0gyntD3UyiRXBJg==
+    size: 177349132
+path: releases/0.6.4/PileaX-0.6.4-arm64.zip
+sha512: 6XgW1DuUwepR5hhkj/mbHQsRnxNbAH8pkWdLNYwANyri0tdOoworfn96Far0ZHj62S+wFKB67JuQdIx1CydPpA==
+releaseDate: '2026-06-26T10:16:31.357Z'
+releaseName: v0.6.4 📦
+releaseNotes: "# What's Changed\r\n\r\n## \U0001F680 Features\r\n\r\n- feat: hide\
+  \ book ruby title (#117) @pileax\r\n\r\n## ⚡ Enhancements\r\n\r\n- enhancement:\
+  \ book metadata (#119) @pileax\r\n- enhancement: book footnote (#118) @pileax\r\n\
+  - enhancement: refactor book footnote dialog (#107) @pileax\r\n\r\n## \U0001F916\
+  \ Maintenance\r\n\r\n- chore(deps): bump actions/checkout from 4 to 7 (#114) @[dependabot[bot]](https://github.com/apps/dependabot)\r\
+  \n- chore(deps): bump release-drafter/release-drafter from 7.3.1 to 7.4.0 (#113)\
+  \ @[dependabot[bot]](https://github.com/apps/dependabot)\r\n\r\n**Full Changelog**:\
+  \ [v0.6.3...v0.6.4](https://github.com/pileax-ai/pileax/compare/v0.6.3...v0.6.4)\r\
   \n"

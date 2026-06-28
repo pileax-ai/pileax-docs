@@ -7,6 +7,7 @@ export interface PostFrontMatter {
   title?: string
   tags?: string[]
   description?: string
+  image?: string
 }
 
 export interface Post {

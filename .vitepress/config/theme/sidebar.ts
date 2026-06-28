@@ -29,13 +29,37 @@ export function sidebarGuide(locale :string) {
         { text: 'Docker', link: 'installation/docker' },
       ]
     },
-    // {
-    //   text: t('reading', true),
-    //   collapsed: false,
-    //   items: [
-    //     { text: t('fonts', true), link: 'reading/fonts/' },
-    //   ]
-    // },
+    {
+      text: t('reading', true),
+      collapsed: true,
+      items: [
+        {
+          text: t('settings', true),
+          collapsed: false,
+          items: [
+            { text: t('fonts', true), link: 'reading/fonts/' },
+            {
+              text: t('styles', true),
+              link: 'reading/styles/',
+              items: [
+                { text: 'Global', link: 'reading/styles/global' },
+                { text: 'Book', link: 'reading/styles/book' },
+              ]
+            },
+            {
+              text: t('background', true),
+              collapsed: true,
+              link: 'reading/background/',
+              items: [
+                { text: t('image', true), link: 'reading/background/image' },
+                { text: t('texture', true), link: 'reading/background/texture' },
+                { text: t('color', true), link: 'reading/background/color' },
+              ]
+            },
+          ]
+        },
+      ]
+    },
     // {
     //   text: t('guide'),
     //   collapsed: false,

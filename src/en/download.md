@@ -35,6 +35,17 @@ Click `More info` → `Run anyway`. This happens because the app isn't signed wi
 <div data-aos="fade-up">
 
 ## <svg-icon name="icon-linux" size="28px" /> Linux
+
+### deb
+For Debian-based systems such as Ubuntu, you can install via the `.deb` package:
+
+1. Download the `.deb` file.
+2. Double-click to install, or use the command line:
+```shell
+sudo apt install ./PileaX-version-amd64.deb
+```
+
+### AppImage
 1. Download the `.AppImage` file.
 2. Double-click the .AppImage, **PileaX** will run without installation.
 

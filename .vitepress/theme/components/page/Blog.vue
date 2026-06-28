@@ -5,25 +5,33 @@
       <article
         v-for="item in currentPagePosts"
         :key="item.regularPath"
-        class="post-item post"
+        class="post-item post shadow-1"
+        :class="{ 'with-cover': item.frontMatter.image }"
+        @click="openUrl(item.regularPath)"
       >
-        <a class="title" @click="openUrl(item.regularPath)">
-          {{ item.frontMatter.title }}
-        </a>
+        <div class="info">
+          <a class="title">
+            {{ item.frontMatter.title }}
+          </a>
 
-        <div class="meta">
-          <div class="date">{{ timeMulti(item.frontMatter.date, 'MMM DD, YYYY').timestamp() }}</div>
+          <div class="meta">
+            <div class="date">{{ timeMulti(item.frontMatter.date, 'MMM DD, YYYY').timestamp() }}</div>
+          </div>
+
+          <div class="desc">{{ item.frontMatter.description }}</div>
+
           <div class="tags" v-if="item.frontMatter.tags">
             <div class="tag"
                  v-for="(tag, index) in item.frontMatter.tags"
                  :key="index"
-                 @click="openUrl(`/pages/tags?tag=${tag}`)">
+                 @click.stop="openUrl(`/pages/tags?tag=${tag}`)">
               {{ tag }}
             </div>
           </div>
         </div>
-
-        <div class="desc">{{ item.frontMatter.description }}</div>
+        <div class="cover shadow-1" v-if="item.frontMatter.image">
+          <img :src="item.frontMatter.image" alt="Cover" />
+        </div>
       </article>
     </div>
 
@@ -97,18 +105,53 @@ function goToPage(page: number): void {
 
   .post-item {
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     display: block;
+    justify-content: space-between;
     border-radius: 10px;
     padding: 22px 26px;
     margin: 10px;
-    background-color: var(--vp-c-bg-soft);
     border: 1px solid var(--vp-c-bg-soft);
     text-decoration: none;
+    cursor: pointer;
 
     &:hover {
       .title {
         color: var(--vp-c-brand);
+      }
+    }
+
+    &.with-cover {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+
+      .info {
+        flex: 1;
+        width: 100%;
+      }
+
+      .cover {
+        width: 320px;
+        height: 180px;
+        border-radius: 12px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 12px;
+        }
+      }
+    }
+
+    .tags {
+      margin-top: 20px;
+
+      .tag {
+        font-size: 1rem;
+        padding: 2px 12px;
+        border-radius: 16px;
       }
     }
   }
@@ -143,4 +186,17 @@ function goToPage(page: number): void {
   }
 }
 
+
+@media (max-width: 768px) {
+  .blog-page {
+    .post-item {
+      flex-direction: column;
+    }
+
+    .info {
+      flex: none;
+      width: 100%
+    }
+  }
+}
 </style>

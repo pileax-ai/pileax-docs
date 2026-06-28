@@ -35,7 +35,19 @@ Windows 可能会弹出`Windows 已保护你的电脑`提示框。
 <div data-aos="fade-up">
 
 ## <svg-icon name="icon-linux" size="28px" /> Linux
+
+### deb
+Ubuntu  等 Debian 系列的系统可以使用 `.deb` 安装：
+
+1. 下载 `.deb` 文件。
+2. 双击安装，或者使用命令行：
+```shell
+sudo apt install ./PileaX-version-amd64.deb
+```
+
+### AppImage
 1. 下载 `.AppImage` 文件。
 2. 双击该 `.AppImage` 文件，**PileaX** 无需安装即可直接运行。
+
 
 </div>
