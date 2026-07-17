@@ -1,5 +1,5 @@
 import DefaultTheme from 'vitepress/theme'
-import { useData, useRoute } from 'vitepress'
+import { useData, useRoute, inBrowser } from 'vitepress'
 import type { EnhanceAppContext, Theme } from 'vitepress'
 import { VpvImage, VpvImageGallery } from '@cynber/vitepress-valence'
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
@@ -20,6 +20,7 @@ import {
   VersionBadge
 } from './components'
 import { data as galleryData } from './data/gallery.data.ts'
+import { initGaEvent } from './utils/gaUtil.ts'
 import 'aos/dist/aos.css'
 import './style/main.css'
 import './style/vars.css'
@@ -95,6 +96,11 @@ const theme = {
       () => initAosEffect(),
       { immediate: true } // Execute on initial load
     )
+
+    // Global GA
+    if (inBrowser) {
+      initGaEvent()
+    }
   },
 } satisfies Theme;
 

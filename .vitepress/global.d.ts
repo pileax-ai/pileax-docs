@@ -17,5 +17,9 @@ declare global {
     color?: string;
     tips?: string;
   }
+
+  interface Window {
+    gtag: (...args: any[]) => void
+  }
 }
 export {}

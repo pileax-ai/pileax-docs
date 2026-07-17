@@ -37,7 +37,11 @@
                              :class="{ 'outline': item.url.indexOf('x64') > 0 }"
                              icon="download"
                              icon-size="20px"
-                             :to="`${fileBaseUrl}/${item.url}`">
+                             :to="`${fileBaseUrl}/${item.url}`"
+                             data-ga-category="download"
+                             data-ga="download_click"
+                             :data-ga-label="getPackage(item.url)"
+                             :data-ga-value="item.size">
                     {{ item.url.indexOf('x64') > 0 ? 'Intel' : 'Apple Silicon' }}
                   </pi-button>
                 </div>
@@ -59,7 +63,11 @@
                              :class="{ 'outline': item.url.indexOf('x86') > 0 }"
                              icon="download"
                              icon-size="20px"
-                             :to="`${fileBaseUrl}/${item.url}`">
+                             :to="`${fileBaseUrl}/${item.url}`"
+                             data-ga-category="download"
+                             data-ga="download_click"
+                             :data-ga-label="getPackage(item.url)"
+                             :data-ga-value="item.size">
                     {{ t('installer') }} {{ item.url.indexOf('x86') > 0 ? 'x86' : 'x86_64' }}
                   </pi-button>
                 </div>
@@ -81,7 +89,11 @@
                              :class="{ 'outline': item.url.indexOf('AppImage') > 0 }"
                              icon="download"
                              icon-size="20px"
-                             :to="`${fileBaseUrl}/${item.url}`">
+                             :to="`${fileBaseUrl}/${item.url}`"
+                             data-ga-category="download"
+                             data-ga="download_click"
+                             :data-ga-label="getPackage(item.url)"
+                             :data-ga-value="item.size">
                     {{ item.url.indexOf('deb') > 0 ? 'deb arm64' : 'AppImage x86_64' }}
                   </pi-button>
                 </div>
@@ -161,6 +173,10 @@ const fetchMeta = async () => {
   } finally {
     loading.value = false
   }
+}
+
+const getPackage = (url: string) => {
+  return url.split('.').pop()
 }
 
 onMounted(() => {

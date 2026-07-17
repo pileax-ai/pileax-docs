@@ -24,6 +24,7 @@
   "include": [
     "./.vitepress/**/*.ts",
     "./.vitepress/**/*.vue",
+    "./.vitepress/env.d.ts",
     "./.vitepress/global.d.ts",
     "./.vitepress/components.d.ts"
   ],
