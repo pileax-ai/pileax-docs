@@ -1,4 +1,4 @@
-# <svg-icon name="linux" size="36px" color="#0078d4" /> Install on Linux
+# <svg-icon name="linux-color" size="36px" /> Install on Linux
 
 ## System Requirements
 

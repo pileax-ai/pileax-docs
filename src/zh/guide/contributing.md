@@ -27,7 +27,7 @@ sudo npm install -g git-cz
 
 ### 复刻并克隆仓库到本地
 ```shell
-git clone git@github.com:yourname/pileax.git
+git clone --recurse-submodules git@github.com:yourname/pileax.git
 ```
 
 
@@ -54,7 +54,7 @@ yarn format
 #### 构建
 ```shell
 yarn build
-yarn build:electron
+yarn build:desktop
 ```
 
 ### 预览

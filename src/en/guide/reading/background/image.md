@@ -13,6 +13,10 @@ image_dark: '/images/en/background/image-dark.webp',
 enableZoom 
 />
 
+:::info 👆Tips
+General -> Appearance -> Background -> Image
+:::
+
 ## Preview
 <VpvImageGallery
 layout="grid"

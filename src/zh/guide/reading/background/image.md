@@ -12,6 +12,10 @@ image_dark: '/images/zh/background/image-dark.webp',
 enableZoom 
 />
 
+:::info 👆提示
+通用 -> 外观 -> 背景 -> 图片
+:::
+
 ## 预览
 <VpvImageGallery
 layout="grid"

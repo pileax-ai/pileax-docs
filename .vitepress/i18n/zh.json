@@ -49,6 +49,8 @@
   "sidebar.installation": "安装",
   "sidebar.introduction": "简介",
   "sidebar.overview": "概述",
+  "sidebar.styles.book": "本书样式",
+  "sidebar.styles.global": "全局样式",
   "theme.prev": "上一页",
   "theme.next": "下一页",
   "theme.returnToTop": "返回顶部",

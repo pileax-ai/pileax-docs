@@ -37,13 +37,13 @@ export function sidebarGuide(locale :string) {
           text: t('settings', true),
           collapsed: false,
           items: [
-            { text: t('fonts', true), link: 'reading/fonts/' },
+            // { text: t('fonts', true), link: 'reading/fonts/' },
             {
               text: t('styles', true),
               link: 'reading/styles/',
               items: [
-                { text: 'Global', link: 'reading/styles/global' },
-                { text: 'Book', link: 'reading/styles/book' },
+                { text: t('styles.global'), link: 'reading/styles/global' },
+                { text: t('styles.book'), link: 'reading/styles/book' },
               ]
             },
             {

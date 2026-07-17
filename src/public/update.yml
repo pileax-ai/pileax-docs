@@ -1,37 +1,35 @@
-version: 0.6.4
+version: 0.6.5
 files:
-  - url: releases/0.6.4/PileaX-0.6.4-arm64.zip
-    sha512: 6XgW1DuUwepR5hhkj/mbHQsRnxNbAH8pkWdLNYwANyri0tdOoworfn96Far0ZHj62S+wFKB67JuQdIx1CydPpA==
-    size: 179539457
-  - url: releases/0.6.4/PileaX-0.6.4-arm64.dmg
-    sha512: pbAX7Ky9oCUXgPqdUJUzSVVa2gQ01iOotGM0E7m/39ZRTx+2q9REXG5PTHpATg2imCS7TtGgd5O5n2CHlB2KYA==
-    size: 183375480
-  - url: releases/0.6.4/PileaX-0.6.4-x64.zip
-    sha512: 4i14wjuLviYaV/S4z48oSE6uf25CrZeJJmN0ajnqOmmeEviA+xCI7sxEhPMZDMzvjIGFkUQ901qhvgaKQw87cA==
-    size: 187863075
-  - url: releases/0.6.4/PileaX-0.6.4-x64.dmg
-    sha512: 24+eeBaoBiaVyJCERiMB95cHTVs54RfgJmlu37SKR7PFGavNDOKIJKq7mvani7R0KVj5ZYtI+9vYKpO3L2omVQ==
-    size: 191780551
-  - url: releases/0.6.4/PileaX-0.6.4-x64.exe
-    sha512: wDyXDQjionrSle6ZQRkRqiR39Q26ohj9vcPqnSkyaamS6JOpr3L1H7cOXUSSnWAu9mUWzIzZvZf2daRd/r4ITw==
-    size: 163195887
-  - url: releases/0.6.4/PileaX-0.6.4-x86_64.AppImage
-    sha512: UUdI7A9CWr6T7e/0LHWc8AvmcCz2gEn9PNTROPcSsfSDPcykx/SsJO1stoohJ9FSZENhAwaCDJAr3GrKdrToNA==
-    size: 218491292
-    blockMapSize: 227760
-  - url: releases/0.6.4/PileaX-0.6.4-amd64.deb
-    sha512: hJSliy1kQIfzWYbZmM9eQwPpMAp5l9T9iHk0UhRFU88wQpuTAanAb3NQsGv73YMVmhEdCPL0gyntD3UyiRXBJg==
-    size: 177349132
-path: releases/0.6.4/PileaX-0.6.4-arm64.zip
-sha512: 6XgW1DuUwepR5hhkj/mbHQsRnxNbAH8pkWdLNYwANyri0tdOoworfn96Far0ZHj62S+wFKB67JuQdIx1CydPpA==
-releaseDate: '2026-06-26T10:16:31.357Z'
-releaseName: v0.6.4 📦
-releaseNotes: "# What's Changed\r\n\r\n## \U0001F680 Features\r\n\r\n- feat: hide\
-  \ book ruby title (#117) @pileax\r\n\r\n## ⚡ Enhancements\r\n\r\n- enhancement:\
-  \ book metadata (#119) @pileax\r\n- enhancement: book footnote (#118) @pileax\r\n\
-  - enhancement: refactor book footnote dialog (#107) @pileax\r\n\r\n## \U0001F916\
-  \ Maintenance\r\n\r\n- chore(deps): bump actions/checkout from 4 to 7 (#114) @[dependabot[bot]](https://github.com/apps/dependabot)\r\
-  \n- chore(deps): bump release-drafter/release-drafter from 7.3.1 to 7.4.0 (#113)\
-  \ @[dependabot[bot]](https://github.com/apps/dependabot)\r\n\r\n**Full Changelog**:\
-  \ [v0.6.3...v0.6.4](https://github.com/pileax-ai/pileax/compare/v0.6.3...v0.6.4)\r\
+  - url: releases/0.6.5/PileaX-0.6.5-arm64.zip
+    sha512: 0F0HpAZpECDfFlnMo1KK5MPJRVUucph7lgINyHbk+ZV5f7vCoP7SuqBbGAMb/ThHwqj3Ws7mIYT1E48lDjJ/tA==
+    size: 177930153
+  - url: releases/0.6.5/PileaX-0.6.5-arm64.dmg
+    sha512: fLvKntLHaAlhuiq0D2d11mJSO1W822qt1aMM8KkeiFG2iUpmQkyphhPEmBAO/KK+hr+n5KnJv8F8PVxqtfQtsQ==
+    size: 181780653
+  - url: releases/0.6.5/PileaX-0.6.5-x64.zip
+    sha512: 05lusHR88tHBN7WHhxQ+sv5y0PDm58f2dvrInyEMhs4GPcaCpWA9Xm93wtWGrk9O7fUHVsTTvGhioRcQkvagcw==
+    size: 187867919
+  - url: releases/0.6.5/PileaX-0.6.5-x64.dmg
+    sha512: HBs8zYefNH2pa4fKcwSgTo8A2b0OWm10UyWpUIXs+l6cJApfW2VjJIuPz7gZJjSid9+fufdz6IkVKGMTV+ZOAg==
+    size: 191788664
+  - url: releases/0.6.5/PileaX-0.6.5-x64.exe
+    sha512: WEPP+Y45RtlCsqTd3lS/yiWKpXosUGHjOdIHenEC1b6MJh9cDlJK9xno1kDa14NUTZn1xH/WoP76p9QKAFNdGg==
+    size: 163200669
+  - url: releases/0.6.5/PileaX-0.6.5-x86_64.AppImage
+    sha512: vx9JZmZPAILP2iQAHaPIdCAYIGi0jQqP/D1BwLtNs6Z+BdEjAx4bS1ori4sX9/dW+AXucZfoF7lnTCjHM+pcbw==
+    size: 218495039
+    blockMapSize: 227411
+  - url: releases/0.6.5/PileaX-0.6.5-amd64.deb
+    sha512: QWEodX1tHkt9ip2QSOpPq8ODXsmPnn7u8MPAKmQ+v8kYkeXqMRP5oYDxmaxob/tXbSFOvasdIUChGV+r9zYaHw==
+    size: 177320108
+path: releases/0.6.5/PileaX-0.6.5-arm64.zip
+sha512: 0F0HpAZpECDfFlnMo1KK5MPJRVUucph7lgINyHbk+ZV5f7vCoP7SuqBbGAMb/ThHwqj3Ws7mIYT1E48lDjJ/tA==
+releaseDate: '2026-07-17T10:45:39.784Z'
+releaseName: v0.6.5 📦
+releaseNotes: "# What's Changed\r\n\r\n## \U0001F680 Features\r\n\r\n- feat: reader\
+  \ instant search (#122) @pileax\r\n\r\n## ⚡ Enhancements\r\n\r\n- enhancement: book\
+  \ and collection search (#123) @pileax\r\n\r\n## \U0001F41B Bug Fixes\r\n\r\n- fix:\
+  \ book footnote styles (#121) @pileax\r\n\r\n## \U0001F916 Maintenance\r\n\r\n-\
+  \ chore(deps): bump release-drafter/release-drafter from 7.4.0 to 7.5.1 (#120) @[dependabot[bot]](https://github.com/apps/dependabot)\r\
+  \n\r\n**Full Changelog**: [v0.6.4...v0.6.5](https://github.com/pileax-ai/pileax/compare/v0.6.4...v0.6.5)\r\
   \n"

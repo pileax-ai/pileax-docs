@@ -49,6 +49,8 @@
   "sidebar.installation": "Installation",
   "sidebar.introduction": "Introduction",
   "sidebar.overview": "Overview",
+  "sidebar.styles.book": "Book Styles",
+  "sidebar.styles.global": "Global Styles",
   "theme.prev": "Previous Page",
   "theme.next": "Next Page",
   "theme.returnToTop": "Return to top",

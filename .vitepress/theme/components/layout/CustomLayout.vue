@@ -24,14 +24,33 @@
 </template>
 
 <script lang="ts" setup>
-import { useData } from 'vitepress'
+import { watch, nextTick } from 'vue'
+import { useData, useRoute } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import useCommon from '../../../hooks/useCommon'
 import { CommentGiscus } from '../../components/index'
 
 const { Layout } = DefaultTheme
 const { frontmatter } = useData()
+const route = useRoute()
 const { openUrl, timeMulti } = useCommon()
+
+watch(
+  () => route.path,
+  async () => {
+    if (frontmatter.value.type === 'post') {
+      return
+    }
+
+    await nextTick()
+
+    const badges = document.querySelectorAll('#giscus')
+    badges.forEach(el => {
+      el.remove()
+    })
+  },
+  { immediate: true }
+)
 </script>
 
 <style scoped>

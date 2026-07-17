@@ -1,13 +1,17 @@
-# 阅读背景
+# Reading Background
+A great reading experience is far more than just black text on a blank white page. While the default black-and-white theme looks clean, high-saturation solid backgrounds tend to strain your eyes during extended reading sessions and lack visual depth.
 
-完美的阅读体验绝不仅仅是“白纸黑字”。极简的纯色背景固然干净，但在长时间阅读时，高饱和度的纯色容易引发视觉疲劳，且缺乏空间层次感。
+Choosing a proper background greatly elevates your reading experience:
+- Relieve eye strain: Carefully tuned background images, textures and colors reflect and absorb screen light to reduce harsh glare hitting your eyes directly.
+- Build immersive reading atmosphere: Whether you’re reading classic literature or modern novels, a matching background instantly puts you in a focused, immersive reading mood.
 
-因此，选择合适的背景有助于提高阅读体验：
-- 缓解视力疲劳：精心调配的背景图片、纹理或颜色能够有效折射和吸收屏幕光线，减少直射眼球的刺眼感。
-- 营造阅读氛围：无论是读一本古典文学，还是品味现代小说，合适的背景能让你瞬间进入“沉浸阅读”的状态。
 
-## 背景图片
-
-## 背景底纹
-
-## 背景色
+<features
+:items="[
+{ label: 'Image', icon: 'image', link: '/guide/reading/background/image' },
+{ label: 'Texture', icon: 'texture', link: '/guide/reading/background/texture' },
+{ label: 'Color', icon: 'colors', link: '/guide/reading/background/color' },
+]"
+data-aos="fade-up"
+data-aos-delay="0" dense>
+</features>

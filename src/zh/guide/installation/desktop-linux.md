@@ -1,4 +1,4 @@
-# <svg-icon name="linux" size="36px" color="#0078d4" /> 在 Linux 上安装
+# <svg-icon name="linux-color" size="36px" /> 在 Linux 上安装
 
 ## 系统要求
 - 系统版本：Ubuntu 22.04+, Debian 11+, Fedora 38+

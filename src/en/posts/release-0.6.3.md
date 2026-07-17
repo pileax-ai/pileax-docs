@@ -1,6 +1,6 @@
 ---
 type: post
-title: PileaX 0.6.3
+title: PileaX 0.6.3 Released
 description: Added more book background textures and support for custom book CSS styling to continuously enhance the reading experience. Book excerpts can now be grouped by book, allowing you to quickly view all excerpts and notes from each volume. For notes, Markdown import and export functionality has been newly added.
 date: 2026-06-17
 image: /images/en/cover/0.6.3-texture.webp
@@ -19,11 +19,11 @@ Added more book background textures and support for custom book CSS styling to c
 
 ## Reading
 
-### Textures
+### Background Texture
 
 Perfect reading experiences go far beyond just "black ink on a white screen." While minimalist, solid backgrounds look clean, prolonged reading on high-saturation solid colors can easily trigger visual fatigue and often lacks a sense of spatial depth.
 
-The newly introduced background textures in PileaX are designed to break that icy digital barrier:
+The newly introduced [background textures](/guide/reading/background/texture) in PileaX are designed to break that icy digital barrier:
 
 * **Relieve Visual Fatigue:** Carefully calibrated textures effectively diffuse screen glare, softening the harsh light that strikes your eyes.
 * **Set the Perfect Reading Ambience:** Whether you are diving into classical literature or savoring modern fiction, the right texture instantly teleports you into a state of "deep, immersive reading."
@@ -31,20 +31,20 @@ The newly introduced background textures in PileaX are designed to break that ic
 
 <VpvImageGallery
 layout="grid"
-headerTitle="10+ Preset Textures"
-:folders="['/gallery/en/textures']"
+headerTitle="Preset Textures"
+:folders="['/gallery/en/background/textures']"
 />
 
-### 自定义CSS
+### Custom CSS
+Flexible, fine-grained customization of ebook styles such as fonts and colors. Supports:
+- [Global Styles](/guide/reading/styles/global)
+- [Book Styles](/guide/reading/styles/book)
 
 
-### 自定义选项
+## Note
+Markdown import and export for notes are supported.
 
-## 笔记
-
-### Markdown 导入导出
-
-## 更新内容
+## Changelog
 
 ### 🚀 Features
 
@@ -60,4 +60,4 @@ headerTitle="10+ Preset Textures"
 - enhancement: workspace
 - enhancement: reader font weight
 
-更多：https://github.com/pileax-ai/pileax/releases/tag/v0.6.3
+More：https://github.com/pileax-ai/pileax/releases/tag/v0.6.3

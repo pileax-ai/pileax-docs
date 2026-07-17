@@ -40,7 +40,6 @@ const options = computed(() => {
       'InlineMath',
       'Markdown',
       'OBlockMath',
-      'OColorHighlighter',
       'ODetails',
       'OImage',
       'OVideo',
