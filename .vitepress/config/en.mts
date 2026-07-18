@@ -1,6 +1,6 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
 import { nav } from './theme/nav'
-import { sidebarGuide } from './theme/sidebar'
+import { sidebarGuide, sidebarDevelop } from './theme/sidebar'
 import { labels } from './theme/labels'
 import { name, description, docsRepo } from '../meta'
 import { getPosts } from '../theme/utils/serverUtil'
@@ -23,6 +23,7 @@ export default async () => {
       postLength: posts.length,
       nav: nav(locale),
       sidebar: {
+        '/develop/': { base: '/develop/', items: sidebarDevelop(locale) },
         '/guide/': { base: '/guide/', items: sidebarGuide(locale) },
       },
       editLink: {

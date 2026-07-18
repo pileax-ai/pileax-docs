@@ -45,6 +45,7 @@
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:preview": "vitepress preview",
+    "sort-i18n": "cd .vitepress/i18n; node sort.js"
   }
 }

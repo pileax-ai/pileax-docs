@@ -1,5 +1,5 @@
 <template>
-  <div class="pi-features">
+  <div class="pi-features" :class="`columns-${columns}`">
     <div class="items main-features">
       <div class="item"
            :data-aos="itemAos"
@@ -43,6 +43,10 @@ defineProps({
   dense: {
     type: Boolean,
     default: false
+  },
+  columns: {
+    type: Number,
+    default: 3
   }
 })
 
@@ -157,6 +161,12 @@ const goTo = (value: Indexable) => {
       width: calc(100% / 2) !important;
     }
   }
+
+  .pi-features.columns-2 {
+    .item {
+      width: 100% !important;
+    }
+  }
 }
 
 @media (min-width: 960px) {
@@ -165,6 +175,12 @@ const goTo = (value: Indexable) => {
 
     .item {
       width: calc(100% / 3) !important;
+    }
+  }
+
+  .pi-features.columns-2 {
+    .item {
+      width: calc(100% / 2) !important;
     }
   }
 }

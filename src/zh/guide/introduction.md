@@ -8,8 +8,6 @@
   <a href="https://github.com/pileax-ai/pileax/releases/latest">
     <img src="https://img.shields.io/github/v/release/pileax-ai/pileax" alt="Latest Release"></a>
   <a href="https://github.com/pileax-ai/pileax/releases">
-    <img src="https://img.shields.io/github/v/release/pileax-ai/pileax?include_prereleases&label=pre-release" alt="Pre-release"></a>
-  <a href="https://github.com/pileax-ai/pileax/releases">
     <img src="https://img.shields.io/github/downloads/pileax-ai/pileax/total" alt="Downloads"></a>
   <a href="https://github.com/badges/shields/pulse" alt="Activity">
     <img src="https://img.shields.io/github/commit-activity/m/pileax-ai/pileax" /></a>
@@ -17,7 +15,7 @@
     <img src="https://img.shields.io/badge/license-MIT-green?style=square" /></a>
 </p>
 
-PileaX 是一款本地优先的一站式 AI 知识库，集 `AI 对话`、`智能笔记`、`电子书阅读和管理于`于一体。从知识的生产到应用，PileaX 帮助您建立统一的知识库，利用 AI 智能体技术不断优化 AI 交互体验。数据完全由您掌控，支持离线使用的桌面应用和灵活部署的 Web 应用。
+PileaX 是一款本地优先的一站式 AI 知识库，集 `AI 对话`、`智能笔记`、`电子书阅读和管理`于一体。从知识的生产到应用，PileaX 帮助您建立统一的知识库，利用 AI 智能体技术不断优化 AI 交互体验。数据完全由您掌控，支持离线使用的桌面应用和灵活部署的 Web 应用。
 
 ## 🌟 **特性**
 
@@ -30,3 +28,15 @@ PileaX 是一款本地优先的一站式 AI 知识库，集 `AI 对话`、`智�
 ::: tip 关键字
 AI赋能, AI对话, AI智能体, 易用, Notion, 笔记, 电子书, 阅读, 图书馆
 :::
+
+
+<features
+:items="[
+{ label: 'macOS', caption: 'Caption', icon: 'apple', link: '/zh/guide/installation/desktop-macos' },
+{ label: 'Windows', icon: 'microsoft-windows', link: '/zh/guide/installation/desktop-windows' },
+{ label: 'Linux', icon: 'linux', link: '/zh/guide/installation/desktop-linux' },
+]"
+:columns="2"
+data-aos="fade-up"
+data-aos-delay="0">
+</features>

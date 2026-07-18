@@ -1,3 +1,37 @@
+/* Vitepress CSS */
+.vp-doc {
+    table {
+        display: table;
+        width: 100% !important;
+        border-collapse: collapse;
+        border: none;
+
+        th {
+            color: var(--vp-c-text-1);
+        }
+        tr, th {
+            background-color: transparent !important;
+        }
+        th, td {
+            padding: 8px 0;
+            border: none;
+        }
+        thead tr {
+            border: none;
+        }
+        tr:hover {
+            background-color: var(--vp-c-bg-soft) !important;
+        }
+    }
+
+    .custom-block {
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+/* Global CSS */
 body {
     font-size: 16px !important;
     font-family: var(--vp-font-family-base) !important;
@@ -36,6 +70,19 @@ body {
     width: unset!important;
     height: unset!important;
     object-fit: unset !important;
+}
+
+kbd {
+    cursor: pointer;
+    text-align: center;
+    background: var(--vp-c-divider);
+    border-radius: 3px;
+    min-width: 20px;
+    margin: 2px;
+    padding: 0 4px;
+    font-family: Consolas, Lucida Console, monospace;
+    font-weight: 600;
+    display: inline-block;
 }
 
 .badges {
@@ -203,6 +250,10 @@ h1:has(svg), h2:has(svg) {
 
 .VPDoc:not(.has-sidebar) .content {
     max-width: unset !important;
+}
+
+.vpv-image-container.center {
+    margin: 0 auto;
 }
 
 .dark {
