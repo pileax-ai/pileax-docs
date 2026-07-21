@@ -94,7 +94,7 @@ export function sidebarGuide(locale :string) {
       text: t('system'),
       collapsed: true,
       items: [
-        { text: t('introduction'), link: 'introduction' },
+        { text: t('workspace'), link: 'system/workspace' },
       ]
     },
     { text: t('shortcut'), link: 'shortcut' },

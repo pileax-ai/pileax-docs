@@ -147,7 +147,7 @@ const readerFeatures = computed(() => {
     margin-top: 100px;
 
     .image-container {
-      margin: 30px 0;
+      margin: 50px 0;
     }
   }
 
