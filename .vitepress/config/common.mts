@@ -1,9 +1,29 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, type HeadConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons-ng'
 import { resolve } from 'node:path'
 import { keywords, name, repo } from '../meta'
 import { CustomThemeConfig } from '../theme'
+
+// Google Analytics
+const ga = process.env.NODE_ENV === 'production'
+  ? [
+      [
+        'script',
+        { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-7N2WL6JFRB' }
+      ],
+      [
+        'script',
+        {},
+        `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-7N2WL6JFRB');`
+      ]
+    ] as HeadConfig[]
+  : []
+
+console.log('ga', ga)
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig<CustomThemeConfig>({
@@ -43,18 +63,9 @@ export default defineConfig<CustomThemeConfig>({
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
     ['meta', { name: 'keywords', content: keywords }],
-    [
-      'script',
-      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-7N2WL6JFRB' }
-    ],
-    [
-      'script',
-      {},
-      `window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-7N2WL6JFRB');`
-    ]
+
+    // GA
+    ...ga
   ],
 
   markdown: {

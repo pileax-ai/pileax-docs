@@ -53,6 +53,7 @@ export default function () {
   }
 
   return {
+    lang,
     t,
     openUrl,
     timeMulti

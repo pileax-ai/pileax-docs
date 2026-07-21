@@ -10,11 +10,13 @@ export const initGaEvent = () => {
     const value = target.getAttribute('data-ga-value') ? parseInt(target.getAttribute('data-ga-value')!) : undefined
 
     if (typeof window.gtag !== 'undefined') {
-      window.gtag('event', eventName, {
-        event_category: category,
-        event_label: label,
-        value: value,
-      })
+      if ((import.meta as any).env.PROD) {
+        window.gtag('event', eventName, {
+          event_category: category,
+          event_label: label,
+          value: value,
+        })
+      }
 
       if ((import.meta as any).env.DEV) {
         console.log('[GA Event]', eventName, { category, label, value })

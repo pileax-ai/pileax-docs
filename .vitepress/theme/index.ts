@@ -13,6 +13,7 @@ import {
   Blog,
   Download,
   Home,
+  Reading,
   Features,
   GradientText,
   SvgIcon,
@@ -34,6 +35,7 @@ const theme = {
     app.component('Blog', Blog)
     app.component('Download', Download)
     app.component('Home', Home)
+    app.component('Reading', Reading)
     app.component('Tags', Tags)
 
     // components

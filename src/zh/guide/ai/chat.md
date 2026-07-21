@@ -1,53 +1,26 @@
 # AI 对话
 
-PileaX 支持主流大语言模型（LLM），只需要配置AI提供商，即可使用其AI能力。
-
-## 支持的AI提供商
-
-目前支持的AI提供商：
-
-| 名称 | 简介 |
-|------|------|
-| **DeepSeek** | 开源大模型，推理高效且成本低廉。 |
-| **Moonshot** | 超长上下文助手，支持二十万汉字。 |
-| **Tongyi** | 通义千问，中文优化的大语言模型。 |
-| **MiniMax** | 多模态模型，支持语音、文本和视觉。 |
-| **OpenAI** | GPT系列模型，擅长文本生成与理解。 |
-| **Anthropic** | 安全对齐的模型，注重可解释性。 |
-| **Gemini** | 谷歌多模态模型，支持文本图像音频视频和代码。 |
-| **Ollama** | 轻量框架，用于本地运行大语言模型。 |
-
-后续会支持更多的AI提供商。
-
-## 设置AI提供商
-
-### 设置向导
-
-初始使用 PileaX 时，PileaX 会提示用户去设置AI提供商。
+通过 `AI 对话` 让AI协作完成各种任务。PileaX提供了与OpenAI、DeepSeek等一致的AI对话体验。
 
 <VpvImage
 :imageConfig="{
-image: '/images/zh/ai/ai-settings-guide.webp',
-}"
-width="480px"
-class="center"
-enableZoom
-/>
-
-### 设置
-
-在 `模型提供商` 中添加需要的提供商，并配置 `API 密钥` 等信息。
-
-<VpvImage
-:imageConfig="{
-image: '/images/zh/ai/ai-providers.webp',
-image_dark: '/images/zh/ai/ai-providers-dark.webp',
+image: '/images/zh/ai/ai-chat.webp',
+image_dark: '/images/zh/ai/ai-chat-dark.webp',
 }"
 enableZoom
 />
 
-:::info 👆提示
-操作：设置 -> 模型提供商
+## 对话
 
-快捷键：<kbd>⌘</kbd><kbd>G</kbd>
-:::
+按任务来划分对话（话题）。一般来说，开始一个全新任务或消息过多时，创建一个新的对话。
+
+- 开启新对话：根据需要创建新的对话；
+- 收藏：话题默认是按时间组织的，对于重要的话题可以收藏置顶。
+
+## 消息列表
+
+一个话题的消息列表可能包含数百条消息，而每条消息的内容长度不一，PileaX提供的目录可以快速定位到指定的消息。
+
+## 消息
+- 复制：复制当前回答的内容，格式为Markdown；
+- 创建笔记：对于一些非常满意的回答，可以创建笔记存储起来。

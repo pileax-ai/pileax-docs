@@ -1,3 +1,7 @@
+---
+breadcrumb: true
+---
+
 # AI 提供商
 
 PileaX 支持主流大语言模型（LLM），只需要配置 AI 提供商，即可使用其 AI 能力。

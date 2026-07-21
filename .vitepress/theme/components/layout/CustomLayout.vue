@@ -14,6 +14,8 @@
           </div>
         </div>
       </div>
+
+      <breadcrumb></breadcrumb>
     </template>
     <template #doc-after>
       <div v-if="frontmatter.type === 'post'" class="post-after">
@@ -28,7 +30,7 @@ import { watch, nextTick } from 'vue'
 import { useData, useRoute } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import useCommon from '../../../hooks/useCommon'
-import { CommentGiscus } from '../../components/index'
+import { Breadcrumb, CommentGiscus } from '../../components/index'
 
 const { Layout } = DefaultTheme
 const { frontmatter } = useData()

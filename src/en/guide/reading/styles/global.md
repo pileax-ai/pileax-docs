@@ -1,3 +1,7 @@
+---
+breadcrumb: true
+---
+
 # Global Styles
 
 Global styles can be applied to all books.

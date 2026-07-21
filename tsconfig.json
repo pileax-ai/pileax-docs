@@ -23,6 +23,7 @@
   },
   "include": [
     "./.vitepress/**/*.ts",
+    "./.vitepress/**/*.mts",
     "./.vitepress/**/*.vue",
     "./.vitepress/env.d.ts",
     "./.vitepress/global.d.ts",

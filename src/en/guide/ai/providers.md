@@ -1,3 +1,7 @@
+---
+breadcrumb: true
+---
+
 # AI Providers
 
 PileaX supports mainstream Large Language Models (LLMs). Simply configure your AI provider to access its AI capabilities.

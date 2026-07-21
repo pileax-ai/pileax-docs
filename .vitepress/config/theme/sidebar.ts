@@ -52,7 +52,8 @@ export function sidebarGuide(locale :string) {
       link: 'note/',
       collapsed: true,
       items: [
-        { text: t('introduction'), link: 'introduction' },
+        { text: t('editor'), link: 'note/editor' },
+        { text: t('note.ai'), link: 'note/ai' },
       ]
     },
     {
@@ -60,6 +61,9 @@ export function sidebarGuide(locale :string) {
       collapsed: true,
       link: 'reading/',
       items: [
+        { text: t('reader.feature.shelf'), link: 'reading/shelf' },
+        { text: t('reader.feature.collection'), link: 'reading/collection' },
+        { text: t('reader.feature.annotation'), link: 'reading/annotation' },
         {
           text: t('settings'),
           items: [
