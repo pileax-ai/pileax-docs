@@ -1,35 +1,36 @@
-version: 0.6.5
+version: 0.6.6
 files:
-  - url: releases/0.6.5/PileaX-0.6.5-arm64.zip
-    sha512: 0F0HpAZpECDfFlnMo1KK5MPJRVUucph7lgINyHbk+ZV5f7vCoP7SuqBbGAMb/ThHwqj3Ws7mIYT1E48lDjJ/tA==
-    size: 177930153
-  - url: releases/0.6.5/PileaX-0.6.5-arm64.dmg
-    sha512: fLvKntLHaAlhuiq0D2d11mJSO1W822qt1aMM8KkeiFG2iUpmQkyphhPEmBAO/KK+hr+n5KnJv8F8PVxqtfQtsQ==
-    size: 181780653
-  - url: releases/0.6.5/PileaX-0.6.5-x64.zip
-    sha512: 05lusHR88tHBN7WHhxQ+sv5y0PDm58f2dvrInyEMhs4GPcaCpWA9Xm93wtWGrk9O7fUHVsTTvGhioRcQkvagcw==
-    size: 187867919
-  - url: releases/0.6.5/PileaX-0.6.5-x64.dmg
-    sha512: HBs8zYefNH2pa4fKcwSgTo8A2b0OWm10UyWpUIXs+l6cJApfW2VjJIuPz7gZJjSid9+fufdz6IkVKGMTV+ZOAg==
-    size: 191788664
-  - url: releases/0.6.5/PileaX-0.6.5-x64.exe
-    sha512: WEPP+Y45RtlCsqTd3lS/yiWKpXosUGHjOdIHenEC1b6MJh9cDlJK9xno1kDa14NUTZn1xH/WoP76p9QKAFNdGg==
-    size: 163200669
-  - url: releases/0.6.5/PileaX-0.6.5-x86_64.AppImage
-    sha512: vx9JZmZPAILP2iQAHaPIdCAYIGi0jQqP/D1BwLtNs6Z+BdEjAx4bS1ori4sX9/dW+AXucZfoF7lnTCjHM+pcbw==
-    size: 218495039
-    blockMapSize: 227411
-  - url: releases/0.6.5/PileaX-0.6.5-amd64.deb
-    sha512: QWEodX1tHkt9ip2QSOpPq8ODXsmPnn7u8MPAKmQ+v8kYkeXqMRP5oYDxmaxob/tXbSFOvasdIUChGV+r9zYaHw==
-    size: 177320108
-path: releases/0.6.5/PileaX-0.6.5-arm64.zip
-sha512: 0F0HpAZpECDfFlnMo1KK5MPJRVUucph7lgINyHbk+ZV5f7vCoP7SuqBbGAMb/ThHwqj3Ws7mIYT1E48lDjJ/tA==
-releaseDate: '2026-07-17T10:45:39.784Z'
-releaseName: v0.6.5 📦
-releaseNotes: "# What's Changed\r\n\r\n## \U0001F680 Features\r\n\r\n- feat: reader\
-  \ instant search (#122) @pileax\r\n\r\n## ⚡ Enhancements\r\n\r\n- enhancement: book\
-  \ and collection search (#123) @pileax\r\n\r\n## \U0001F41B Bug Fixes\r\n\r\n- fix:\
-  \ book footnote styles (#121) @pileax\r\n\r\n## \U0001F916 Maintenance\r\n\r\n-\
-  \ chore(deps): bump release-drafter/release-drafter from 7.4.0 to 7.5.1 (#120) @[dependabot[bot]](https://github.com/apps/dependabot)\r\
-  \n\r\n**Full Changelog**: [v0.6.4...v0.6.5](https://github.com/pileax-ai/pileax/compare/v0.6.4...v0.6.5)\r\
+  - url: releases/0.6.6/PileaX-0.6.6-arm64.zip
+    sha512: U2usP1Rijm40M8ORcjoUTzCsztNTNeuW6lUYoGCWZU/VK4PUjcnGcGHcWF9D0avboBes78uezahiyuTgTJ7ayg==
+    size: 177932170
+  - url: releases/0.6.6/PileaX-0.6.6-arm64.dmg
+    sha512: SRzySmua0eoFIKZIz1BoZ1d7b1qxm5akIIlDJQVDxhhwsFT8k5pnHH7t3SV569bvP2xjLzqlXKUaA5MQX7wlHw==
+    size: 181762078
+  - url: releases/0.6.6/PileaX-0.6.6-x64.zip
+    sha512: hpqqu0ADEIh1+PlVH+f0MSEGysw4j+PWwedvhtIlTm7P5e3ibpJ0/2d6PkkMvG04MUbvKC48AGkEj2EguXDdYw==
+    size: 187871360
+  - url: releases/0.6.6/PileaX-0.6.6-x64.dmg
+    sha512: ksuaOOGc21vpsgMN8xeIA0nM3ekeYtJh+vh7HvYPF2q/kDRdyhGoOvXqUy+e8yZMtNlo4NHybckJJclWI7mU/g==
+    size: 191805377
+  - url: releases/0.6.6/PileaX-0.6.6-x86_64.AppImage
+    sha512: +NzCvOgWzR30KkmyYE9eg4p7uv0DZ9KDi4LBFqb5W5EtTQH4bvDDJzGBGBfWuQFQHPQ5CKKhBa+5jdcSX+1zkQ==
+    size: 218503086
+    blockMapSize: 227266
+  - url: releases/0.6.6/PileaX-0.6.6-amd64.deb
+    sha512: pjoXRXxFyjWzVEHajLpGm/nASkSG6+ytDxC/xSqgi1r4YdBH1IeoppKhkYxTmMtADWXNwRr05DBZEP9BOS7ZnQ==
+    size: 177324028
+  - url: releases/0.6.6/PileaX-0.6.6-x64.exe
+    sha512: CMt0dj2T6L3wuKrlJlu+5JvqPRAcm6p3ODtsjA5qReNF/NBS6qZmfpYTGvihPA/oH4PZNPqiTvDqgNiuwEIJ6Q==
+    size: 163205237
+path: releases/0.6.6/PileaX-0.6.6-arm64.zip
+sha512: U2usP1Rijm40M8ORcjoUTzCsztNTNeuW6lUYoGCWZU/VK4PUjcnGcGHcWF9D0avboBes78uezahiyuTgTJ7ayg==
+releaseDate: '2026-07-23T01:31:57.658Z'
+releaseName: v0.6.6 📦
+releaseNotes: "# What's Changed\r\n\r\n## \U0001F680 Features\r\n\r\n- feat: personal\
+  \ note and team note (#129) @pileax\r\n\r\n## \U0001F41B Bug Fixes\r\n\r\n- fix:\
+  \ bugs (#128) @pileax\r\n\r\n## \U0001F916 Maintenance\r\n\r\n- chore(deps): bump\
+  \ actions/setup-node from 4 to 7 (#127) @[dependabot[bot]](https://github.com/apps/dependabot)\r\
+  \n- chore(deps): bump release-drafter/release-drafter from 7.5.1 to 7.6.0 (#126)\
+  \ @[dependabot[bot]](https://github.com/apps/dependabot)\r\n\r\n**Full Changelog**:\
+  \ [v0.6.5...v0.6.6](https://github.com/pileax-ai/pileax/compare/v0.6.5...v0.6.6)\r\
   \n"
