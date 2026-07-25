@@ -2,7 +2,7 @@ import { defineConfig, type HeadConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons-ng'
 import { resolve } from 'node:path'
-import { name, description, repo } from '../meta'
+import { name, description, repo, homeUrl } from '../meta'
 import { CustomThemeConfig } from '../theme'
 
 // Google Analytics
@@ -91,6 +91,10 @@ export default defineConfig<CustomThemeConfig>({
     config(md) {
       md.use(tabsMarkdownPlugin)
     }
+  },
+
+  sitemap: {
+    hostname: homeUrl
   },
 
   vite: {
