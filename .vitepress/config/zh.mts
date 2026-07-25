@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 import { nav } from './theme/nav'
 import { sidebarDevelop, sidebarGuide } from './theme/sidebar'
 import { labels } from './theme/labels'
-import { name, titleZh, docsRepo, descriptionZh, keywordsZh, homeUrlZh } from '../meta'
+import { name, titleZh, docsRepo, descriptionZh, keywordsZh, homeUrlZh, title, description } from '../meta'
 import { getPosts } from '../theme/utils/serverUtil'
 import { CustomThemeConfig } from '../theme'
 
@@ -42,9 +42,9 @@ export default async () => {
       ['meta', { property: 'og:title', content: titleZh }],
       ['meta', { property: 'og:description', content: descriptionZh }],
       ['meta', { property: 'og:url', content: homeUrlZh }],
-      ['meta', { property: 'og:image', content: 'https://pileax.ai/images/og-image.webp' }],
-      // Twitter Card
-      ['meta', { name: 'twitter:card', content: 'https://pileax.ai/images/og-image.webp' }]
+      // Twitter
+      ['meta', { name: 'twitter:title', content: title }],
+      ['meta', { name: 'twitter:description', content: description }],
     ],
   })
 }
