@@ -1,7 +1,7 @@
 export const name = 'PileaX';
 export const orgName = 'PileaX AI';
-export const keywords = 'ai, ai agent, knowledge base, note, book, reading, library';
-export const keywordsZh = 'AI, 智能体, 知识库, 笔记, 书, 阅读, 图书馆';
+export const keywords = 'ai, ai agent, knowledge base, note, book, reading, library, epub';
+export const keywordsZh = 'AI, 智能体, 知识库, 笔记, 书, 阅读, 图书馆, EPUB';
 export const title = 'PileaX: All-in-One AI Knowledge Base System';
 export const description = 'PileaX is a local-first, all-in-one AI knowledge base that integrates AI chat, smart notes, and e-book reading.';
 export const titleZh = 'PileaX: 一站式 AI 知识库系统';

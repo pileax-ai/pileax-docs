@@ -2,7 +2,7 @@ import { defineConfig, type HeadConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons-ng'
 import { resolve } from 'node:path'
-import { name, repo } from '../meta'
+import { name, description, repo } from '../meta'
 import { CustomThemeConfig } from '../theme'
 
 // Google Analytics
@@ -23,7 +23,19 @@ const ga = process.env.NODE_ENV === 'production'
     ] as HeadConfig[]
   : []
 
-console.log('ga', ga)
+const softwareAppSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: name,
+  operatingSystem: 'Windows, macOS, Linux, Web',
+  applicationCategory: 'ProductivityApplication',
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'USD'
+  },
+  description: description
+}
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig<CustomThemeConfig>({
@@ -69,7 +81,8 @@ export default defineConfig<CustomThemeConfig>({
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:image', content: 'https://pileax.ai/images/og-image.webp' }],
     ['meta', { name: 'twitter:site', content: '@pileaxai' }],
-
+    // SoftwareApplication
+    ['script', { type: 'application/ld+json' }, JSON.stringify(softwareAppSchema)],
     // GA
     ...ga
   ],

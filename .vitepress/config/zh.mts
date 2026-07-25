@@ -33,12 +33,7 @@ export default async () => {
     },
     head: [
       ['link', { rel: 'canonical', href: homeUrlZh }],
-      [
-        'meta', {
-          name: 'keywords',
-          content: keywordsZh
-        }
-      ],
+      ['meta', { name: 'keywords', content: keywordsZh }],
       ['meta', { property: 'og:title', content: titleZh }],
       ['meta', { property: 'og:description', content: descriptionZh }],
       ['meta', { property: 'og:url', content: homeUrlZh }],
