@@ -77,6 +77,7 @@ export default defineConfig<CustomThemeConfig>({
     ['meta', { property: 'robots', content: 'index, follow' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:image', content: 'https://pileax.ai/images/og-image.webp' }],
+    ['meta', { name: 'baidu-site-verification', content: 'codeva-pcd7V4N0UR' }],
     // Twitter
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:image', content: 'https://pileax.ai/images/og-image.webp' }],
