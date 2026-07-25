@@ -1,8 +1,12 @@
 export const name = 'PileaX';
 export const orgName = 'PileaX AI';
-export const keywords = 'ai, ai agent, knowledge base, note, book, reading';
-export const description = 'PileaX AI: One-Stop AI Knowledge Base System';
-export const descriptionZh = 'PileaX AI：一站式 AI 知识库系统';
-export const site = 'https://docs.pileax.ai';
+export const keywords = 'ai, ai agent, knowledge base, note, book, reading, library';
+export const keywordsZh = 'AI, 智能体, 知识库, 笔记, 书, 阅读, 图书馆';
+export const title = 'PileaX: All-in-One AI Knowledge Base System';
+export const description = 'PileaX is a local-first, all-in-one AI knowledge base that integrates AI chat, smart notes, and e-book reading.';
+export const titleZh = 'PileaX: 一站式 AI 知识库系统';
+export const descriptionZh = 'PileaX 是一款本地优先的一站式 AI 知识库，集 AI 对话、智能笔记、电子书阅读一体。';
+export const homeUrl = 'https://pileax.ai';
+export const homeUrlZh = 'https://pileax.ai/zh';
 export const repo = 'https://github.com/pileax-ai/pileax';
 export const docsRepo = 'https://github.com/pileax-ai/pileax-docs';

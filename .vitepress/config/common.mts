@@ -2,7 +2,7 @@ import { defineConfig, type HeadConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons-ng'
 import { resolve } from 'node:path'
-import { keywords, name, repo } from '../meta'
+import { name, repo } from '../meta'
 import { CustomThemeConfig } from '../theme'
 
 // Google Analytics
@@ -62,7 +62,7 @@ export default defineConfig<CustomThemeConfig>({
 
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
-    ['meta', { name: 'keywords', content: keywords }],
+    ['meta', { property: 'og:type', content: 'website' }],
 
     // GA
     ...ga
