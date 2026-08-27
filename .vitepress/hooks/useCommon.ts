@@ -24,6 +24,11 @@ export default function () {
   }
 
   const openUrl = (path: string, target = '') => {
+    if (path.startsWith('mailto:')) {
+      window.location.href = path
+      return
+    }
+
     if (target === '_blank' || isExternal(path)) {
       window.open(path, target || '_self')
     } else {

@@ -14,6 +14,7 @@ import {
   Download,
   Home,
   Reading,
+  Support,
   Features,
   GradientText,
   SvgIcon,
@@ -36,6 +37,7 @@ const theme = {
     app.component('Download', Download)
     app.component('Home', Home)
     app.component('Reading', Reading)
+    app.component('Support', Support)
     app.component('Tags', Tags)
 
     // components

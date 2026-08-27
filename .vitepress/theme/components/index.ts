@@ -4,6 +4,7 @@ export { default as Blog } from './page/Blog.vue'
 export { default as Download } from './page/Download.vue'
 export { default as Home } from './page/Home.vue'
 export { default as Reading } from './page/Reading.vue'
+export { default as Support } from './page/Support.vue'
 export { default as Breadcrumb } from './common/Breadcrumb.vue'
 export { default as PiButton } from './common/Button.vue'
 // @ts-ignore

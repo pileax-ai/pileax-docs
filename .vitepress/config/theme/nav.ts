@@ -7,9 +7,10 @@ export function nav(locale :string) {
   }
   const base = (locale === 'en') ? '' : `/${locale}`;
   return [
+    { text: t('download'), link: base + '/download' },
     { text: t('guide'), link: base + '/guide/getting-started' },
     { text: t('develop'), link: base + '/develop/overview' },
     { text: t('blog'), link: base + '/blog' },
-    { text: t('download'), link: base + '/download' },
+    { text: t('support'), link: base + '/support' },
   ] as DefaultTheme.NavItem[];
 }

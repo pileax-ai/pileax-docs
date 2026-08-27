@@ -9,7 +9,9 @@
                  :class="{ 'dense': dense, 'link': item.link }"
                  @click="goTo(item)">
           <div class="icon" :class="{ 'brand': !dense }">
-            <svg-icon :name="item.icon" :size="dense ? '24px' : '32px'" />
+            <svg-icon :name="item.icon"
+                      :size="dense ? '24px' : '32px'"
+                      :class="item.value" />
           </div>
           <span v-if="dense">{{ item.label }}</span>
           <div class="meta" v-else>
@@ -24,7 +26,7 @@
 
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { useRouter } from 'vitepress'
+import useCommon from '../../../hooks/useCommon.ts'
 import SvgIcon from './SvgIcon.vue'
 
 defineProps({
@@ -50,11 +52,11 @@ defineProps({
   }
 })
 
-const router = useRouter()
+const { openUrl } = useCommon()
 
 const goTo = (value: Indexable) => {
   if (value.link) {
-    router.go(value.link)
+    openUrl(value.link, value.linkTarget)
   }
 }
 </script>
