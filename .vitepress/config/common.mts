@@ -66,10 +66,10 @@ export default defineConfig<CustomThemeConfig>({
     socialLinks: [
       { icon: 'github', link: repo },
     ],
-    footer: {
-      message: 'MIT Licensed.',
-      copyright: `Copyright © 2025-present ${name}`
-    },
+    // footer: {
+    //   message: 'MIT Licensed.',
+    //   copyright: `Copyright © 2025-present ${name}`
+    // },
   },
 
   head: [

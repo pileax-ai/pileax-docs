@@ -19,6 +19,13 @@ export default function () {
     return tr(lang.value, key)
   }
 
+  const buildPath = (path: string) => {
+    if (lang.value === 'zh' && !path.startsWith('/zh')) {
+      path = '/zh' + path
+    }
+    return path
+  }
+
   const isExternal = (url: string): boolean => {
     return /^(https?:)?\/\//.test(url)
   }
@@ -32,9 +39,7 @@ export default function () {
     if (target === '_blank' || isExternal(path)) {
       window.open(path, target || '_self')
     } else {
-      if (lang.value === 'zh' && !path.startsWith('/zh')) {
-        path = '/zh' + path
-      }
+      path = buildPath(path)
       router.go(path)
     }
   }
@@ -60,6 +65,7 @@ export default function () {
   return {
     lang,
     t,
+    buildPath,
     openUrl,
     timeMulti
   }

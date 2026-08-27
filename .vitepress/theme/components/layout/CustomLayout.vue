@@ -22,20 +22,28 @@
         <comment-giscus />
       </div>
     </template>
+
+    <template #layout-bottom>
+      <custom-footer v-if="showFooter"></custom-footer>
+    </template>
   </Layout>
 </template>
 
 <script lang="ts" setup>
-import { watch, nextTick } from 'vue'
+import { computed, watch, nextTick } from 'vue'
 import { useData, useRoute } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import useCommon from '../../../hooks/useCommon'
-import { Breadcrumb, CommentGiscus } from '../../components/index'
+import { CustomFooter, Breadcrumb, CommentGiscus } from '../../components/index'
 
 const { Layout } = DefaultTheme
 const { frontmatter } = useData()
 const route = useRoute()
 const { openUrl, timeMulti } = useCommon()
+
+const showFooter = computed(() => {
+  return frontmatter.value.layout === 'home' || frontmatter.value.footer === true
+})
 
 watch(
   () => route.path,

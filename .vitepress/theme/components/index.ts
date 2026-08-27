@@ -1,3 +1,4 @@
+export { default as CustomFooter } from './layout/CustomFooter.vue'
 export { default as CustomLayout } from './layout/CustomLayout.vue'
 export { default as Tags } from './page/Tags.vue'
 export { default as Blog } from './page/Blog.vue'
