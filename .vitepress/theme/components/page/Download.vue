@@ -161,7 +161,7 @@ const t = (key: string) => {
 const fetchMeta = async () => {
   try {
     loading.value = true
-    const response = await fetch('/update.yml')
+    const response = await fetch('/update/update.yml')
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`)
     }
