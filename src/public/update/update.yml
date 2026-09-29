@@ -1,36 +1,44 @@
-version: 0.6.6
+version: 0.7.0
 files:
-  - url: releases/0.6.6/PileaX-0.6.6-arm64.zip
-    sha512: U2usP1Rijm40M8ORcjoUTzCsztNTNeuW6lUYoGCWZU/VK4PUjcnGcGHcWF9D0avboBes78uezahiyuTgTJ7ayg==
-    size: 177932170
-  - url: releases/0.6.6/PileaX-0.6.6-arm64.dmg
-    sha512: SRzySmua0eoFIKZIz1BoZ1d7b1qxm5akIIlDJQVDxhhwsFT8k5pnHH7t3SV569bvP2xjLzqlXKUaA5MQX7wlHw==
-    size: 181762078
-  - url: releases/0.6.6/PileaX-0.6.6-x64.zip
-    sha512: hpqqu0ADEIh1+PlVH+f0MSEGysw4j+PWwedvhtIlTm7P5e3ibpJ0/2d6PkkMvG04MUbvKC48AGkEj2EguXDdYw==
-    size: 187871360
-  - url: releases/0.6.6/PileaX-0.6.6-x64.dmg
-    sha512: ksuaOOGc21vpsgMN8xeIA0nM3ekeYtJh+vh7HvYPF2q/kDRdyhGoOvXqUy+e8yZMtNlo4NHybckJJclWI7mU/g==
-    size: 191805377
-  - url: releases/0.6.6/PileaX-0.6.6-x86_64.AppImage
-    sha512: +NzCvOgWzR30KkmyYE9eg4p7uv0DZ9KDi4LBFqb5W5EtTQH4bvDDJzGBGBfWuQFQHPQ5CKKhBa+5jdcSX+1zkQ==
-    size: 218503086
-    blockMapSize: 227266
-  - url: releases/0.6.6/PileaX-0.6.6-amd64.deb
-    sha512: pjoXRXxFyjWzVEHajLpGm/nASkSG6+ytDxC/xSqgi1r4YdBH1IeoppKhkYxTmMtADWXNwRr05DBZEP9BOS7ZnQ==
-    size: 177324028
-  - url: releases/0.6.6/PileaX-0.6.6-x64.exe
-    sha512: CMt0dj2T6L3wuKrlJlu+5JvqPRAcm6p3ODtsjA5qReNF/NBS6qZmfpYTGvihPA/oH4PZNPqiTvDqgNiuwEIJ6Q==
-    size: 163205237
-path: releases/0.6.6/PileaX-0.6.6-arm64.zip
-sha512: U2usP1Rijm40M8ORcjoUTzCsztNTNeuW6lUYoGCWZU/VK4PUjcnGcGHcWF9D0avboBes78uezahiyuTgTJ7ayg==
-releaseDate: '2026-07-23T01:31:57.658Z'
-releaseName: v0.6.6 📦
-releaseNotes: "# What's Changed\r\n\r\n## \U0001F680 Features\r\n\r\n- feat: personal\
-  \ note and team note (#129) @pileax\r\n\r\n## \U0001F41B Bug Fixes\r\n\r\n- fix:\
-  \ bugs (#128) @pileax\r\n\r\n## \U0001F916 Maintenance\r\n\r\n- chore(deps): bump\
-  \ actions/setup-node from 4 to 7 (#127) @[dependabot[bot]](https://github.com/apps/dependabot)\r\
-  \n- chore(deps): bump release-drafter/release-drafter from 7.5.1 to 7.6.0 (#126)\
-  \ @[dependabot[bot]](https://github.com/apps/dependabot)\r\n\r\n**Full Changelog**:\
-  \ [v0.6.5...v0.6.6](https://github.com/pileax-ai/pileax/compare/v0.6.5...v0.6.6)\r\
+  - url: releases/0.7.0/PileaX-0.7.0-arm64.zip
+    sha512: NdFBuvrq90gD1jWlxaIZ/fyySODFu2lFl6WUfvG7quaLTStZm/eAZy57PDMKOGSK/7hiOizXvhtquseAfJ+DLg==
+    size: 181465991
+  - url: releases/0.7.0/PileaX-0.7.0-arm64.dmg
+    sha512: CyEmk0tIuH0l9ZSYSPDQADQOxIEMad5LwjjRKnpUzdToUgQ0/NqjguHZ9b9GdnzjHGtyOdWVkuYFyyy7Ld2/dg==
+    size: 185443652
+  - url: releases/0.7.0/PileaX-0.7.0-x64.zip
+    sha512: xo+eNQQNZop2+BYeJsq8LtyjvjOVycwSHdSSKtjunX2hh9vX+7G6oMUm4tYOH9SWy9ac3J+5ihGoc2SijsNZkQ==
+    size: 191403252
+  - url: releases/0.7.0/PileaX-0.7.0-x64.dmg
+    sha512: Y8cTAD1VGy+uv0uTiaoyozCjFvRG4CkRpU9CyDBxfXCGa2EamoDVaxKtcdw9FPZRTKiFt9N+YfeePCwdfgyb+Q==
+    size: 195458006
+  - url: releases/0.7.0/PileaX-0.7.0-x64.exe
+    sha512: CZFwrKC38mXH7qvOeDqq2L61t6wRZi34G0bo2SuFQgYnh5WXzIcBEoY+3iRJEZFLIbQymrcYEDqRh5IPmRy/Mg==
+    size: 170337647
+  - url: releases/0.7.0/PileaX-0.7.0-x86_64.AppImage
+    sha512: jlO6eTgTpVG+kyO2eQPr1JngC8FvsqNDfWuXRKRiWA8PpNoXtsn0X3biBo49jrxyp9HhnmgpUY/n3FdW09LQqg==
+    size: 219585530
+    blockMapSize: 228366
+  - url: releases/0.7.0/PileaX-0.7.0-amd64.deb
+    sha512: Rm9JwV0yME0Qc4lfKkLm90ekv9YqJ4F7FYU5jEbnPZorrhfOaZCmwIHFIGTDEuS+DntyBWW23aLI7Dj7DWG4rg==
+    size: 178438108
+path: releases/0.7.0/PileaX-0.7.0-x64.exe
+sha512: CZFwrKC38mXH7qvOeDqq2L61t6wRZi34G0bo2SuFQgYnh5WXzIcBEoY+3iRJEZFLIbQymrcYEDqRh5IPmRy/Mg==
+releaseDate: '2026-09-29T03:34:51.682Z'
+releaseName: v0.7.0 📦
+releaseNotes: "# What's Changed\r\n\r\n## \U0001F680 Features\r\n\r\n- feat: book\
+  \ grouping (#140) @pileax\r\n- feat: new llm providers (#138) @pileax\r\n- feat:\
+  \ app connector (#135) @pileax\r\n\r\n## ⚡ Enhancements\r\n\r\n- enhancement: ai\
+  \ providers (#142) @pileax\r\n\r\n## \U0001F41B Bug Fixes\r\n\r\n- fix: SSL certificate\
+  \ (#143) @pileax\r\n- fix: book upload (#136) @pileax\r\n- fix: bugs (#132) @pileax\r\
+  \n\r\n## \U0001F916 Maintenance\r\n\r\n<details>\r\n<summary>6 changes</summary>\r\
+  \n\r\n- chore(deps): bump dawidd6/action-download-artifact from 24 to 25 (#141)\
+  \ @[dependabot[bot]](https://github.com/apps/dependabot)\r\n- chore(deps): bump\
+  \ hoverkraft-tech/compose-action from 3.1.0 to 3.2.0 (#139) @[dependabot[bot]](https://github.com/apps/dependabot)\r\
+  \n- chore(deps): bump dawidd6/action-download-artifact from 21 to 24 (#134) @[dependabot[bot]](https://github.com/apps/dependabot)\r\
+  \n- chore(deps): bump hoverkraft-tech/compose-action from 3.0.0 to 3.1.0 (#133)\
+  \ @[dependabot[bot]](https://github.com/apps/dependabot)\r\n- chore(deps): bump\
+  \ release-drafter/release-drafter from 7.6.0 to 7.7.0 (#131) @[dependabot[bot]](https://github.com/apps/dependabot)\r\
+  \n- chore(deps): bump actions/setup-python from 4 to 7 (#130) @[dependabot[bot]](https://github.com/apps/dependabot)\r\
+  \n</details>\r\n\r\n**Full Changelog**: [v0.6.6...v0.7.0](https://github.com/pileax-ai/pileax/compare/v0.6.6...v0.7.0)\r\
   \n"
